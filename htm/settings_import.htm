@@ -1,0 +1,48 @@
+<h1>Data Import</h1>
+
+<p>Data Import can be used to read data from sensors or other applications and display the information on the VideoRay Cockpit video as overlay text.</p>
+
+<p><img src="../../pro_4/images/usersettings_dataimport_highlight_scaled.png"></p>
+
+<p>Data Import reads data from a COM port.  Either a physical COM port or virtual COM port can be used.  Virtual COM ports can be used to allow two programs on the same machine to talk to each other.  An example might be to have the KCF Smart Tether send the ROV position data to VideoRay Cockpit, so that the position of the ROV can be recorded as overlay text on the video image.  See the <a href="../../pro_4/html/cockpit_app.html">Application Integration</a> section for more information about virtual COM ports.</p>
+
+<p>Support is provided for NMEA<sup>*</sup> formatted text data.  NMEA data is automatically parsed to find Position (typically from GPS) or Distance (typically from a tether payout sheave).</p>
+
+<h2>Use</h2>
+
+<p>To use Data Import, you must select the port from which you want to import data and then configure the port.  Ports are selected by clicking on the drop down arrow on the right hand side.</p>
+
+<p><img src="../../pro_4/images/usersettings_dataimport_com15_highlight_scaled.png"></p>
+
+<p>Once the port has been selected, you must configure the following items:</p>
+
+<ul>
+  <li>Designation - A text field that allows you to enter a description.  This is optional and for reference only, it is not displayed.</li>
+  <li>Function - The purpose for the import.
+    <ul>
+      <li>Not Used for Import</li>
+      <li>ROV Position</li>
+      <li>Other Platform Position</li>
+      <li>Tether Payout</li>
+      </ul>
+    </li>  
+  <li>Baud Rate - The baud rate to match the device settings or requirements.</li>
+  </ul>
+
+<p>After configuring the port, the background will be green if the port is open and receiving data, red if the port cannot be opened, and brown if the port is operating properly, but no data is being received.</p>
+
+<h2>Examples</h2>
+<ol>
+  <li>Direct from a GPS Antenna to indicate the position of the operating station (this would be for the topside location, not the ROV position, and can be used from a boat when only an approximate position of the ROV is required).<p></p></li>
+  <ul>
+    <li>To read and display position data from a GPS antenna, connect the antenna to the computer and determine the port on which it is recognized.  Then, in the Data Import window, click on the expand arrow on the right hand side for that port number.  Select the data type from the pull down selection (Other Platform Position), and then set the baud rate to match the device (typically 4800).  The data stream should start to display in the area on the right and the position should be displayed on the video as overlay text.<p></p></li>
+    </ul>
+  <li>From a positioning system that supports COM port output of the ROV location.  For this example, we will use the KCF Smart Tether and the virtual COM port pair 31 and 32.<p></p></li>
+  <ul>
+    <li>To read and display position data from the Smart Tether, connect the Smart Tether and begin operation as normal.  From the Smart Tether software menu, select "Tools->Communication Settings".  Select the desired COM port for output.  Typically, this will be a virtual COM port.  Select Port 31, and set the Baud rate to 4800.  Check the Enable Real Time Output and click the OK button to close the Settings window.  Next, in VideoRay Cockpit, click on the User Settings icon in the Control Bar, and then click on the Data Import tab.  Click on the expand arrow on the right hand side for COM port 32.  Select the data type from the pull down selection (ROV Position), and then set the baud rate to match the Smart Tether setting (4800).  The data stream should start to display in the area on the right and the position should be displayed on the video as overlay text.<p></p></li>
+    </ul>
+  </ol>
+
+<p>When a port is set up, the setup background will turn green when communications have been established and data is being received.  If communications have been established with the selected COM port, but no data is being received, then background will turn light brown.  If no communications have been established with the selected COM port, the background will turn red.</p>
+
+<p>* - For more information about NMEA and NMEA data standards, see <a href="http://www.nmea.org/">http://www.nmea.org</a>.

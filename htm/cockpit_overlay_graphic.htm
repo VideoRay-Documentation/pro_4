@@ -1,0 +1,31 @@
+<h1>Digital On-Screen Graphic (Logo)</h1>
+
+<p>VideoRay Cockpit supports a digital on-screen graphic or logo in the lower right hand corner of the video display.  The logo is displayed when the video text overlay is active.</p>
+
+<h2>Deafult Digital On-Screen Graphic - VideoRay Logo</h2>
+
+<p>By default, the VideoRay logo is used, but this can be changed to any desired graphic image.</p>
+
+<p><img src="../../pro_4/images/videoOverlay.png"></p>
+
+<p>The default VideoRay logo is named: <span class="folder">videoOverlay.png</span>, and is stored in:  <span class="folder">C:\Program Files\VideoRay\vrCockpit\</span> or <span class="folder">C:\Program Files (x86)\VideoRay\vrCockpit\</span> for 64 bit operating system.</p>
+
+<h2>Changing the Digital On-Screen Graphic</h2>
+
+<p>To replace the logo with one of your own choice, create a .png image with the following properties:</p>
+
+<ul>
+  <li>Size:  60 X 50 pixels (default - other sizes can be used)<p></p></li>
+
+  <li>Green (RGB 0, 255, 0) is used as the transparent color.  If you want the camera video to show through any area of the logo, paint that section green.  If green is a standard color in your logo, you may need to shift the color slightly (i.e. RGB 1, 255, 1 or 0, 254, 0).</li>
+  </ul>
+
+<p>Once you have created your image, rename <span class="folder">videoOverlay.png</span> to <span class="folder">videoOverlay.bak</span> in the appropriate folder per above.  Then, copy your image to the same folder and make sure it is named: <span class="folder">videoOverlay.png</span>.</p>
+
+<p>The image will automatically be adjusted to 40% transparency when it is displayed.</p>
+
+<p><img src="../../required/images/icon_tip.gif"> Make sure to save a back up copy of your logo so that i does not get overwritten if you upgrade VideoRay Cockpit.</p>
+
+<h2>Removing the Digital On-Screen Graphic</h2>
+
+<p>In order to remove the logo so that it does not display, you need to replace it with an image that is all green (RGB 0, 255, 0).  This image will be transparent.  Once you have created an all green image, rename <span class="folder">videoOverlay.png</span> to <span class="folder">videoOverlay.bak</span> in the appropriate folder per above.  Then, copy your image to the same folder and make sure it is named: <span class="folder">videoOverlay.png</span>.</p>

@@ -1,0 +1,117 @@
+<h1>VideoRay Cockpit Software Updates</h1>
+
+<p>Software updates provide new features and capabilities.  Updates are available using the Downloads link at the top of any page of this documentation.</p>
+
+<p>The VideoRay Cockpit software consists of two parts, a topside control program that includes the user interface, and ROV firmware that communicates with the topside and manages the ROV systems and sensors.  The topside software update process is similar to most other conventional software applications.  There are special procedures to update the ROV firmware.  The ROV firmware update process is described below.  In addition, systems tuning parameters are stored on the ROV.  When updating VideoRay Cockpit, the ROV should be updated with any new default systems tuning parameters that might be included with the update.  If there are new systems tuning parameters included with the update, and you do not store these on the ROV, then ROV will continue to use the old settings and its performance may not be optimal.  The systems tuning parameters are different from the firmware and the procedures to store them on the ROV are also describe below.</p>
+
+<h3>Software Update Process</h3>
+
+<p>The basic steps for the update process are as follows:</p>
+
+<ol>
+  <li>Check for updates<p></p></li>
+  <li>Download the update<p></p></li>
+  <li>Unzip the update<p></p></li>
+  <li>Install the topside software<p></p></li>
+  <li>Update the firmware<p></p></li>
+  <li>Load the factory default systems tuning parameters<p></p></li>
+  <li>Store the systems tuning parameters on the ROV<p></p></li>
+  </ol>
+
+<h2>1. Check for Updates</h2>
+
+<p>To check for updates, verify the current version number.  The version number can be found in the left hand corner of the VideoRay Cockpit Control Bar below the VideoRay logo.  Use the Download link at the top of the page to access VideoRay's download center and ascertain if newer software is available.  Update packages will be named <span class="folder">Setup_vrCockpit_r<i>yyyymmdd</i>.zip</span> or <span class="folder">FULL_Setup_vrCockpit_r<i>yyyymmdd</i>.zip</span> (if prerequisites are required), where the <span class="folder"><i>yyyymmdd</i></span> is the release date.</p>
+
+<h2>2. Download the Update</h2>
+
+<p>If newer software is available, download the update package and save it in <span class="folder">C:\VideoRay\Installs\videoray\</span>.  <span class="folder">C:\VideoRay\Installs\</span> has been set up to store all installation packages on the local machine in case a product needs to be reinstalled.</p>
+
+<h2>3. Unzip the Update</h2>
+
+<p>Unzip the update package.  Windows includes an unzip facility, or you can use one of the many zip/unzip utilities available.</p>
+
+<h2>4. Install the Topside Software</h2>
+
+<p>The installation program will be named <span class="folder">setup.exe</span>.  Run the installation program.  This will update the software on the topside computer.  Follow the steps below to update the ROV firmware and systems tuning parameters.</p>
+
+<h2>5. Update the Firmware</h2>
+
+<p>To update the firmware, connect the ROV directly to the control panel, and make sure that no accessories are connected to the ROV's accessory port.  Turn on the power and run VideoRay Cockpit.  When VideoRay Cockpit is running and connected to the ROV, click on the Engine Room button on the Control Bar to open the Engine Room.  From within the Engine Room, click on the VideoRay Update button.</p>
+
+<table class="transparent">
+  <tr>
+    <td class="imageCellBorderless">
+      <img src="../../pro_4/images/er_vrupdate.png">
+      </td>
+    <td class="imageCellBorderless">
+      &nbsp; &nbsp;
+      </td>
+    <td class="imageCellBorderless">
+      VideoRay Update button
+      </td>
+    </tr>
+  </table>
+
+<p>This will start the VideoRay Update software.  The software should automatically locate the most up-to-date version of the firmware, and its version number will be displayed in the VideoRay Update Window.</p>
+
+<table class="transparent">
+  <tr>
+    <td class="imageCellBorderless">
+      <img src="../../pro_4/images/vrupdate.png" name="update">
+      <p><font color="#ff0000">*</font> The version may be different from the one shown here.</p>
+      </td>
+    <td class="transparent">
+      &nbsp; &nbsp;
+      </td>
+
+<!--v-->
+    <td class="transparent">
+      <a name="open" onmouseover="update.src=openx.src" onmouseout="update.src=vrupdateBase.src">Open <img src="../../required/images/icon_hand.gif"></a><br>
+      <a name="reset" onmouseover="update.src=resetx.src" onmouseout="update.src=vrupdateBase.src">Reset <img src="../../required/images/icon_hand.gif"></a><br>
+      <a name="hotplug" onmouseover="update.src=hotplug.src" onmouseout="update.src=vrupdateBase.src">Hot Plug <img src="../../required/images/icon_hand.gif"></a><br>
+      </td>
+<!--/v-->
+    </tr>
+  </table>
+
+<p>Click on the Reset button to install the firmware, or if you wish to install another version of the firmware, click on the Open button and navigate to find the desired version.  Once the desired version is selected, click on the Reset button to install the firmware.</p>
+
+<p><img src="../../required/images/icon_note.gif"> In some situations, such as when PC Pilot firmware is installed on the ROV, the firmware will not update unless the ROV power is cycled.  To install the firmware in this case, first remove any accessories attached to the ROV accessory port.  Follow the steps above up to the point of clicking on the Reset button, but do not click on the Reset button.  Click on the Hot Plug button to enable the ROV power to be cycled, and then disconnect the ROV from the tether and reconnect it.  The firmware installation process should begin automatically once the tether is reconnected.</p>
+
+<h2>6. Load the Factory Default Systems Tuning Parameters</h2>
+
+<p>With VideoRay Cockpit running, click on the Engine Room button.  Unlock the systems tuning parameters by clicking on the lock toggle.  Click on the Restore Factory Defaults button.</h3>
+
+<table class="transparent">
+  <tr>
+    <td class="imageCellBorderless">
+      <img src="../../pro_4/images/er_default.png">
+      </td>
+    <td class="imageCellBorderless">
+      &nbsp; &nbsp;
+      </td>
+    <td class="imageCellBorderless">
+      Restore to Factory Defaults button
+      </td>
+    </tr>
+  </table>
+
+<h2>7. Store the Systems Tuning Parameters on the ROV</h2>
+
+<p>Click on the Store Settings on the ROV button.  See the <a href="../../pro_4/html/engine_tuning.html">Systems Tuning</a> section of the Engine Room for more information about systems tuning parameters.</p>
+
+<p>
+<table class="transparent">
+  <tr>
+    <td class="imageCellBorderless">
+      <img src="../../pro_4/images/er_save.png">
+      </td>
+    <td class="imageCellBorderless">
+      &nbsp; &nbsp;
+      </td>
+    <td class="imageCellBorderless">
+      Store Settings button
+      </td>
+    </tr>
+  </table>
+</p>

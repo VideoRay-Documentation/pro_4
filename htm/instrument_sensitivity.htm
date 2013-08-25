@@ -1,0 +1,86 @@
+<h1>Control Sensitivity</h1>
+
+<p>The Control Sensitivity Instrument allows you to adjust how responsive the ROV is to joystick and depth control inputs.</p>
+
+<p>The control sensitivity is determined by the values of control gains, which range from 0 to 100.  The control input applied by the operator is multiplied by the gain before being sent to the ROV as a command to drive the thrusters.  A gain setting of 100 and maximum control input will result in the thrusters operating at full available power.  If the gain is reduced, the same maximum control input will result in correspondingly less thruster power.  Lower gain settings allow the operator to have more precise control over the vehicle at the expense not having the maximum power available.  For example, new users may find it easier to pilot the ROV using lower gain settings until they get used to the handling characteristics of the vehicle.  A gain setting of 0 will result in no thrust for any level of control input, and a boost mode allowing numbers of up to 110 is available - see the boost mode below.</p>
+
+<p><img src="../../required/images/icon_tip.gif"> The Pro 4<!--1--> Ultra<!--/1--> is a very responsive vehicle.  The gain settings can be adjusted at any time according to the piloting requirements.  New users may find it easier to learn how to pilot the ROV by decreasing the Yaw gain.</a>
+
+<h3>Display</h3>
+
+<table class="transparent">
+  <tr>
+    <td class="imageCellBorderless">
+      <h4>Visual Input Mode</h4>
+      <img src="../../pro_4/images/instrument_sensitivity_graph.png"><br>
+      </td>
+    <td class="imageCellBorderless">
+      &nbsp; &nbsp;
+      </td>
+    <td class="imageCellBorderless">
+      <h4>Text Input Mode</h4>
+      <img src="../../pro_4/images/instrument_sensitivity_text.png"><br>
+      </td>
+    </tr>
+  </table>
+
+<h2>Use</h2>
+
+<p>You can independently control the sensitivity of the following control parameters:</p>
+
+<ul>
+<!--4-->
+  <li>Surge (forward and backward motion, usually mapped to the joystick forward and back motion)
+  <li>Yaw (turning motion usually mapped to the joystick left and right motion)
+<!--4-->
+<!--1-->
+  <li>Surge (forward and backward) and Yaw (turning motion) (usually mapped to the<!--1--> right<!--1/1--> joystick forward and back and left and right motions)
+  <li>Yaw ()
+<!--1-->
+  <li>Vertical Up (usually mapped to the<!--4--> depth control knob<!--/4--><!--1-->left joystick<!--/1-->)
+  <li>Vertical Down (usually mapped to the<!--4--> depth control knob<!--/4--><!--1-->left joystick<!--/1-->)
+  </ul>
+
+<!--4-->
+<p><img src="../../required/images/icon_note.gif"> The forward gain cannot be set independently of the reverse gain, and the left gain cannot be set independently of the right gain.</p>
+<!--/4-->
+
+<!--4-->
+<p><img src="../../required/images/icon_note.gif"> The surge gain cannot be set independently of the yaw gain.</p>
+<!--/4-->
+
+<p>There are two ways to set the sensitivity, visually or numerically.  In addition you can save three favorite settings for easy recall.</p>
+
+<h3>Adjusting the Sensitivity Visually</h3>
+
+<p>To adjust the control sensitivity visually, click on the graph button in the lower right hand corner of the control sensitivity instrument.  The left hand side of the instrument will display a vertical bar on the left for Vertical Up and Down gains, and a polar grid area on the right for the Surge and Yaw gains.  The green shaded region in both areas gives a visual indication of the gain settings.  Left click and drag the vertical bar to set the Vertical gain symmetrically for up and down.  Right click and drag to set the up and down gain independently.  The top of the bar is for Vertical Up thrust and the bottom for Vertical Down thrust.  Likewise, left click and drag in the polar region to set the Surge gain (indicated by the top and bottom values) and Yaw gain (indicated by the left and right values).  When you left click and drag, the gains are adjusted symmetrically as indicated by the circular green shaded area.  Right click and drag in the polar region to adjust the Surge independent of the Yaw.  The top and bottom of the polar area are for Surge and the left and right are for Yaw.  You can also move the slider above the graph area to decrease or increase all of the gain settings uniformly.  Moving the slider to the left decreases the gains and moving it to the right increases the gains.</p>
+
+<p>For the surge and Yaw, when clicking and dragging with the left button, the gains are set to the radius of the circle at the point of release.<!--4-->  When clicking and dragging with the right button, the gains are set to the major and minor axes radii of an ellipse.  The point of release defines a bounding rectangle of the ellipse.<!--/4--></p>
+
+<h3>Adjusting the Sensitivity Numerically</h3>
+
+<p>To adjust the control sensitivity numerically, click on the number (#) button in the lower right hand corner of the control sensitivity instrument.  The left hand side of the instrument will list the control parameters and display input fields for the gains.  You can enter a number from 1 to 100 in each of the input fields.</p>
+
+<h4>Adjusting the Sensitivity Using the Slider</h4>
+
+<p>You can also move the slider at the top to decrease or increase all of the numbers uniformly.  Moving the slider to the left decreases the gains and moving it to the right increases gains.</p>
+
+<h4>Saving Favorite Settings for Recall</h4>
+
+<p>The Control Sensitivity Instrument also has three buttons for quickly setting the gains to preset or saved values.<!--4-->  By default, "Start-Up" is set to 90 for forward and back, 60 for left and right and 100 for up and down.<!--4-->  "Fine" sets the all of the gains to 50, and "Turbo" sets all of the gains to 100.  Click on a button to activate the gain settings associated with it.  The border of the button will turn blue to indicate its settings are active.  If you make manual changes to the gains, the border will turn yellow to indicate the active gains no longer match its stored settings.  You can change the saved values for any of the buttons.  To save new values for a button, manually adjust the gain settings to the desired values.  Click and hold on the desired button until the border around the button turns blue.  The current settings will be associated with that button and can be recalled at any time by clicking on the button.  Repeat this process to associate new gain settings with any button at any time.</p>
+
+<h3>Start-up Sensitivity</h3>
+
+<p>When VideoRay Cockpit starts, it uses the settings assigned to the "Start-Up" button.  If you want the control sensitivity to have specific settings on start-up, save the values to the "Start-Up" button.</p>
+
+<h3>Boost Mode</h3>
+
+<p>At the right end of the slider is a blue zone, representing boost mode.  Boost mode can be used to get more straight line power, but is not recommended where precision handling is required.  Boost mode allows you to set the gain numbers as high as 110.  The boost mode was developed primarily to account for joystick calibration issues where full displacement of the joystick does not result in full output being recognized by VideoRay Cockpit.</p>
+
+<!--4-->
+<p><img src="../../required/images/icon_note.gif"> The control sensitivity works in conjunction with the Engine Room thruster settings to limit the total amount of thrust available.  If the thruster settings in Engine Room are low, you may not be able to achieve full power even if the control sensitivity is set to 100 or in boost mode.  See the <a href="../../pro_4/html/control_engine.html">Engine Room</a> section of this guide for more information.</p>
+
+<h2>Sizing the Control Sensitivity Instrument</h2>
+
+<p>The size and display of the Control Sensitivity can be adjusted.  See the <a href="../../pro_4/html/cockpit_instruments.html">Instruments</a> section of this guide for more information.</p>
+<!--/4-->

@@ -1,0 +1,16 @@
+v*,Customization Guide,,custom_.htm,,,
+v**,Customize this Document,custom_my_notes2.html,required/htm/custom_my_notes.htm,,,
+v**,Custom Checklists,,custom_checklists.htm,,,
+v**,Hand Controller Mapping,,custom_controller.htm,,,
+v**,Custom Accessories,,custom_accessories.htm,,,
+v**,SDK,,custom_sdk.htm,,,
+4v***,Override Mode,,sdk_override.htm,,,
+
+v*,Upgrader's Guide,,upgrade_.htm,,,
+v**,What's New,,upgrade_new.htm,,,
+v**,Pro 3 Upgrader's Guide,,upgrade_3.htm,,,
+v***,System Architecture,,upgrade_3_architecture.htm,,,
+v***,Feature Updates,,upgrade_3_updates.htm,,,
+v***,Compatibility Issues,,upgrade_3_compatibility.htm,,,
+
+#*,Icons,,icons_.htm,,,

@@ -1,0 +1,14 @@
+window.$$$$$ = 200;
+window.$$$$$ = 200;
+window.copyright = 200;
+window.custom_my_notes = 200;
+window.day_1 = 200;
+window.day_2 = 200;
+window.dn_instructor_toc = 200;
+window.dn_ref = 200;
+window.index = 200;
+window.index = 200;
+window.index = 200;
+window.instructor_skills = 200;
+window.intro_about = 200;
+window.train_the_trainer = 200;

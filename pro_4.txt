@@ -1,0 +1,20 @@
+#Document Commands
+!PRODUCT,Pro 4 Operator Manual
+!VERSION,Version: 1.08.01
+!OUT_DIR,pro_4/
+!VALID_PAGES,4
+!VALID_TEXT,4
+!TEMPLATE_COVER,required/htm/template_cover.htm,cover.htm
+
+!INCLUDE,pro_4/base1.txt,1
+
+#v*,Accessories Guide,,acc_.htm,,,
+#v**,Integration Overview,,acc_overview.htm,,acc_overview_sb.htm,
+
+#!INCLUDE,library/acc_by_cat.txt,2
+#!INCLUDE,library/acc_by_mfg.txt,2
+#!INCLUDE,library/acc_by_az.txt,2
+
+!INCLUDE,pro_4/base2.txt,1
+
+#

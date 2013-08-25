@@ -1,0 +1,53 @@
+<h1>(Pseudo) Altimeter Gauge</h1>
+
+<p>The Altimeter Gauge displays the altitude of the ROV and the Auto Altitude status.  The Altimeter Gauge is also used to engage and set Auto Altitude.</p>
+
+<h2>Pseudo Altimeter</h2>
+
+<p>Normally, an altimeter (optional accessory) is required to use the Altitude Gauge, but in some situations an altimeter is not required.  If the bottom is flat and the depth is known, such as in a tank, the pressure sensor / Depth Gauge (and a little math) can be used to determine the altitude.  See below and the <a href="../../pro_4/html/settings_depth_gauge.html">Depth Gauge</a> section of the <a href="../../pro_4/html/control_settings.html">User Settings</a> for information about using the Pseudo Altimeter.</p>
+
+<h2>Display</h2>
+
+<p><img src="../../required/images/icon_note.gif"> By default, the Altimeter Gauge is not enabled.  The Altimeter Gauge can be enabled in the <a href="../../pro_4/html/settings_depth_gauge.html">Depth Gauge</a> section of the <a href="../../pro_4/html/control_settings.html">User Settings</a>.</p>
+
+<table class="transparent">
+  <tr>
+    <td class="imageCellBorderless">
+      <img src="../../pro_4/images/instrument_altimeter_baseline.png" name="altimeter">
+      </td>
+    <td class="transparent">
+      &nbsp; &nbsp;
+      </td>
+<!--v-->
+    <td class="transparent">
+      <a name="flag" onmouseover="altimeter.src=altimeterScale.src" onmouseout="altimeter.src=altimeterBase.src">Altitude Scale <img src="../../required/images/icon_hand.gif"></a><br />
+      <a name="flag" onmouseover="altimeter.src=altimeterFlag.src" onmouseout="altimeter.src=altimeterBase.src">Altitude Indicator Flag <img src="../../required/images/icon_hand.gif"></a><br />
+      <a name="auto" onmouseover="altimeter.src=altimeterAuto.src" onmouseout="altimeter.src=altimeterBase.src">Auto Altitude Control / Indicator <img src="../../required/images/icon_hand.gif"></a><br />
+      <a name="bottom" onmouseover="altimeter.src=altimeterBottom.src" onmouseout="altimeter.src=altimeterBase.src">Set Bottom Depth <img src="../../required/images/icon_hand.gif"></a><br />
+      <a name="thruster" onmouseover="altimeter.src=altimeterThruster.src" onmouseout="altimeter.src=altimeterBase.src">Vertical Thruster Setting Indicator <img src="../../required/images/icon_hand.gif"></a>
+      </td>
+<!--/v-->
+    </tr>
+  </table>
+
+<!--p-->
+<p>The Altimeter Gauge displays the following information:</p>
+<ul>
+  <li>The Altitude Scale</li>
+  <li>The Altitude Indicator Flag</li>
+  <li>The Vertical Thruster Setting Indicator</li>
+  <li>The Auto Altitude Control / Indicator</li>
+  </ul>
+<!--/p-->
+
+<h2>Use</h2>
+
+<p>The altitude of the ROV is indicated as a number in the flag, which moves along the scale proportionally to the altitude.  As the ROV moves higher, the flag moves up the scale.  As the ROV moves towards the bottom, the flag moves down the scale.</p>
+
+<p>The vertical thruster setting indicator is on the right side of the Altimeter Gauge.  When there is no thrust applied, this indicator becomes transparent.  When thrust is applied, a green shaded section appears within the indicator.  The length of the green shading from the horizontal centerline indicates the amount of user input applied for the vertical thruster.  Vertical up thrust (to move the vehicle towards the surface) is indicated by a green shading above the horizontal centerline.  Vertical down thrust is indicated by a green shading below the horizontal centerline.</p>
+
+<p>The Auto Altitude control/indicator is below the Auto Depth control/indicator.  Auto Altitude can be used to make the ROV hover at the current altitude or surface or dive to a user specified altitude.  See the <a href="../../pro_4/html/pilot_auto_altitude.html">Auto Altitude</a> section of the <a href="../../pro_4/html/oper_.html">Operations Guide</a> for details on using Auto Altitude.
+
+<p>The size and display of the Altitude Gauge can be adjusted.  See the <a href="../../pro_4/html/cockpit_instruments.html">Instruments</a> section of this guide for more information.</p>
+
+<p><img src="../../required/images/icon_note.gif"> The feedback of the thruster setting is based upon the status of the hand controller input, not the thruster action.</p>

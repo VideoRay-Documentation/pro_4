@@ -1,0 +1,58 @@
+<h1>ROV Health Indicator</h1>
+
+<p>The ROV Health Indicator provides status information for several key operational parameters, including the power management system, power, communications, internal humidity and internal temperature.</p>
+
+<h2>Display</h2>
+
+<table class="transparent">
+  <tr>
+    <td class="imageCellBorderless">
+      <img src="../../pro_4/images/instrument_health_ok_baseline.png" name="health">
+      </td>
+    <td class="transparent">
+      &nbsp; &nbsp;
+      </td>
+<!--v-->
+    <td class="transparent">
+      <a name="power" onmouseover="health.src=power_mgmt.src" onmouseout="health.src=healthBase.src">Power Management Status Indicator Bar <img src="../../required/images/icon_hand.gif"></a><br>
+      <a name="power" onmouseover="health.src=power.src" onmouseout="health.src=healthBase.src">Power Status Indicator <img src="../../required/images/icon_hand.gif"></a><br>
+      <a name="comms" onmouseover="health.src=comms.src" onmouseout="health.src=healthBase.src">Communications Status Indicator <img src="../../required/images/icon_hand.gif"></a><br>
+      <a name="humidity" onmouseover="health.src=humidity.src" onmouseout="health.src=healthBase.src">Humidity Status Indicator <img src="../../required/images/icon_hand.gif"></a><br>
+      <a name="temp" onmouseover="health.src=temp.src" onmouseout="health.src=healthBase.src">Temperature Status Indicator <img src="../../required/images/icon_hand.gif"></a><br>
+      </td>
+<!--/v-->
+    </tr>
+  </table>
+
+<!--p-->
+<p>The ROV Health Indicator displays the following information (from left to right):</p>
+<ul>
+  <li>Power Management Status Indicator Bar</li>
+  <li>Power Status Indicator</li>
+  <li>Communications Status Indicator</li>
+  <li>Humidity Status Indicator</li>
+  <li>Temperature Status Indicator</li>
+  </ul>
+<!--/p-->
+
+<h2>Use</h2>
+
+<p>The status indicators are green if the status is okay, but change to red if a problem is detected.</p>
+
+<table class="transparent">
+  <tr>
+    <td class="imageCellBorderless">
+      <img src="../../pro_4/images/instrument_health_fault.png">
+      </td>
+    <td class="transparent">
+      &nbsp; &nbsp;
+      </td>
+    <td class="transparent">
+      Sample ROV Health Indicator displaying a communications fault.
+      </td>
+    </tr>
+  </table>
+
+<p>If a problem is detected, corrective action should be taken.  See the <a href="../../pro_4/html/mnt_diagnostics.html">Diagnostics and Repair</a> section of the <a href="../../pro_4_mnt_n/html/index.html">Maintenance Guide</a> for more information.</p>
+
+<p>The size and display of the ROV Health Indicator can be adjusted.  See the <a href="../../pro_4/html/cockpit_instruments.html">Instruments</a> section of this guide for more information.</p>

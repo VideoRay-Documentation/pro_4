@@ -1,0 +1,68 @@
+<h1>VideoRay Cockpit Application Integration</h1>
+
+<p>VideoRay Cockpit supports unprecedented application integration through new software and hardware interfaces.</p>
+
+<h2>Virtual COM Ports</h2>
+
+<p>For data communications with other applications, VideoRay Cockpit software includes a virtual COM port driver.  As an example of how this technology works, VideoRay Cockpit is integrated with the KCF Smart Tether.  Both programs need to access their respective hardware, but the KCF Smart Tether nodes and the ROV share a common communications bus.  This presents a problem because only one software application at a time can access the physical port to which the bus is attached.  In order to solve this problem, VideoRay Cockpit handles the communications with both hardware systems and passes information it receives from the tether nodes to a virtual COM port.  The KCF Smart Tether opens a companion virtual COM Port where it receives this data.  As you may have noticed, virtual COM ports are defined in pairs.  Typically one application writes to a port, and the other application reads from the companion port.  The virtual COM port driver supports multiple port pairs.</p>
+
+<p>A second example is the Desert Star AquaMap Shiphull.  Traditionally, this system used the APIC (Auxiliary Pair of Independent Conductors) in the tether, and the software "talked" directly to the mobile station mounted on the ROV.  This meant that other devices that require the APIC could not be used simultaneously with ShipHull.  In the Pro 4, the mobile station can be connected to the ROV communications bus rather than the APIC (see below for hardware configuration details), and VideoRay cockpit can pass the data from the mobile station to the Shiphull software using a pair of virtual COM ports.  Using this arrangement, ShipHull can now be used simultaneously with accessories such as sonar or other devices that require a dedicated communications channel.</p>
+
+<p>Other possible uses of virtual COM ports include having VideoRay Cockpit make the heading, depth, temperature and/or other parameters available for another software application to read in real time.</p>
+
+<h3>Default Virtual COM Port Assignments</h3>
+
+<table>
+  <tr>
+    <th>
+      COM&nbsp;Port&nbsp;Pair
+      </th>
+    <th>
+      Purpose
+      </th>
+    </tr>
+  <tr>
+    <td align="center">
+      15 - 16
+      </td>
+    <td>
+      Ports assigned for VideoRay Cockpit to communicate with KCF Smart Tether
+      </td>
+    </tr>
+  <tr >
+    <td align="center">
+      17 - 18
+      </td>
+    <td>
+      Unassigned
+      </td>
+    </tr>
+  <tr>
+    <td align="center">
+      19 - 20
+      </td>
+    <td>
+      Unassigned
+      </td>
+    </tr>
+  <tr>
+    <td align="center">
+      31 - 32
+      </td>
+    <td>
+      Reserved for VideoRay Cockpit to communicate with a generic external application for real-time serial data transfer
+      </td>
+    </tr>
+  </table>
+
+<p>Additional port pairs or assignments may be defined in the future.</p>
+
+<p>In each case in the table above, VideoRay Cockpit is configured to communicate with the lower (odd) numbered port and the other software application configured to communicate with the higher (even) numbered port.</p>
+
+<h2>PAM - a New Hardware Interface</h2>
+
+<p>Up until now, the only accessory that could be controlled by VideoRay was the manipulator.  Other accessories needed to use the APIC and have a topside software application to control the accessory or read data from it.  In order to expand the possibilities, VideoRay created a PAM (Protocol Adapter and Multiplexer) module.  The PAM module is a hardware interface that supports power, servo motor controllers and serial communications.  The PAM will allow devices like the radiation sensor, which required the APIC and its own software application, to be connected to a PAM, and communicate directly with VideoRay Cockpit.  Besides freeing up the APIC for another device, this arrangement allows VideoRay Cockpit to offer a radiation sensor instrument.   The instrument can be configurable with control over and the display and alarms, and even turning the sensor on or off.  In addition, and perhaps more importantly, with VideoRay Cockpit managing the data from the radiation sensor, it can be displayed in the video text overlay and/or recorded as part of a comprehensive collection of synchronized video and sensor data.</p>
+
+<h2>SDK (Software Developer's Kit)</h2>
+
+<p>Accessory developers, programmers and "Do-it-your-selfers" will be able to exploit the capabilities of the virtual COM ports and PAM easily through the VideoRay Cockpit SDK.  See the <a href="../../pro_4/html/custom_sdk.html">SDK</a> section of the <a href="../../pro_4/html/custom_.html">Customization Guide</a> for more information.  Additional information about the SDK can also be found online at: <a href="http://download.videoray.com/developer/" target="_blank">http://download.videoray.com/developer/</a></p>

@@ -1,0 +1,56 @@
+<h1>Compass and Attitude Indicator</h1>
+
+<p>The Compass Instrument displays a variety of information, including the heading of the ROV, the Auto Heading status, an artificial horizon to indicate the attitude of the ROV, and the horizontal thruster settings.  The Compass Instrument is also used to engage and set Auto Heading.</p>
+
+<h2>Display</h2>
+
+<table class="transparent">
+  <tr>
+    <td class="imageCellBorderless">
+      <img src="../../pro_4/images/instrument_compass_full_baseline.png" name="compass">
+      </td>
+    <td class="transparent">
+      &nbsp; &nbsp;
+      </td>
+<!--v-->
+    <td class="transparent">
+      <a name="rose" onmouseover="compass.src=rose.src" onmouseout="compass.src=compassBase.src">Compass Rose <img src="../../required/images/icon_hand.gif"></a><br>
+      <a name="auto" onmouseover="compass.src=auto.src" onmouseout="compass.src=compassBase.src">Auto Heading Control / Indicator <img src="../../required/images/icon_hand.gif"></a><br>
+<!--4-->
+      <a name="horizon" onmouseover="compass.src=horizon.src" onmouseout="compass.src=compassBase.src">Artificial Horizon <img src="../../required/images/icon_hand.gif"></a><br>
+<!--/4-->
+      <a name="thrusters" onmouseover="compass.src=thrusters.src" onmouseout="compass.src=compassBase.src">Horizontal Thruster Settings Indicators<img src="../../required/images/icon_hand.gif"></a><br>
+      </td>
+<!--/v-->
+    </tr>
+  </table>
+
+<!--p-->
+<p>The Compass and Attitude Indicator displays the following information:</p>
+<ul>
+  <li>The Compass Rose is in the center</li>
+<!--4-->
+  <li>The gray area surrounding the compass rose is the Auto Heading Control / Indicator</li>
+<!--/4-->
+  <li>The outer blue and green area is the Artificial Horizon</li>
+  <li>The bands on the left and right are the Horizontal Thruster Settings Indicators</li>
+  </ul>
+<!--/p-->
+
+<h2>Use</h2>
+
+<p>The central portion of the Compass displays the heading of the ROV.  It uses a "heading up" display so that the heading of the ROV is always displayed under the reference indicator at the top center of the compass dial.  For example, if the ROV is heading NW, the North arrow will be rotated to the right.  The heading in degrees clockwise from North is also listed at the center of the dial.</p>
+
+<!--4-->
+<p>The Auto Heading control/indicator is around the perimeter of the Compass.  Auto Heading can be used to make the ROV maintain its current heading, or turn to a user specified heading.  See the <a href="../../pro_4/html/pilot_auto_heading.html">Auto Heading</a> section of the <a href="../../pro_4/html/oper_.html">Operations Guide</a> for details on using Auto Heading.
+<!--/4-->
+
+<p>The blue and green ring around the Compass/Auto Heading is the Attitude Indicator, which acts like an artificial horizon.  It indicates the pitch and roll of the ROV.  The horizon is represented by the horizontal interface line between the top blue section (sky) and the bottom green section (earth).  When the ROV pitches down to a nose low attitude, the amount of green increases and the interface line moves up within the circle.  The reverse is true when the ROV pitches up.  When the ROV rolls to the starboard (right), the interface line rotates to the left indicating that the starboard side is closer to the sea floor.  The reverse is true when the ROV rolls to the port (left).</p>
+
+<p>The outer bands on the left and right of the Compass are the horizontal thrusters settings indicators.  The left side displays the port thruster setting, and the right side displays the starboard thruster setting.  When there is no thrust applied, these indicators become transparent.  When thrust is applied a green shaded section appears within the bands.  The length of the green shading from the horizontal centerline indicates the amount of user input applied for that thruster.  Forward thrust is indicated by a green shading above the horizontal centerline.  Reverse thrust is indicated by a green shading below the horizontal centerline.</p>
+
+<!--4-->
+<p>The size and display of the Compass can be adjusted for more information.  See the <a href="../../pro_4/html/cockpit_instruments.html">Instruments</a> section of this guide for more information.</p>
+<!--/4-->
+
+<p><img src="../../required/images/icon_note.gif"> The feedback of the thrusters settings is based upon the status of the hand controller input, not the thruster action.</p>

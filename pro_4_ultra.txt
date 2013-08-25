@@ -1,0 +1,11 @@
+#Document Commands
+!PRODUCT,Pro 4 Ultra User Manual
+!VERSION,Version: 1.00.00
+!OUT_DIR,pro_4_ultra/
+!VALID_PAGES,1
+!VALID_TEXT,1
+!TEMPLATE_COVER,required/htm/template_cover.htm,cover.htm
+
+!INCLUDE,pro_4/base1.txt,1
+
+!INCLUDE,pro_4/base2.txt,1
