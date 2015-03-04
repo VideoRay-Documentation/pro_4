@@ -1,0 +1,142 @@
+# VideoRay DocGen Script file.
+# script is parsed line by line, so linebreaks are not cool!
+# First column denotes line type
+# # == comment
+# ! == command (see below)
+# * == doc gen line
+# n == do not include in print
+# $ == generate output, but do not include in menu or print
+# NUL == do not output file (must be the third item on the page line)
+
+#File commands
+#OUTDIR == output directory
+#COPY   == list of files (css, etc.) to copy to output directory
+#          directories must end with a \ (like images\)
+
+#Pop up menu setup
+!MENU_WIDTH,198
+!MENU_POSITION,48,160
+!MENU_DROP_OFFSET,-80,10
+#MENU_COLORS,background,background_highlight,text,text_highlight,border,shadow
+!MENU_COLORS,#663300,#dcaa66,#ffffff,#000000,#000000,#000000
+!MENU_FONT,Arial,9
+
+!OUTDIR,dn_maintenance_out
+!COPY,vrtemplate.css
+!COPY,menu_images\,menu_includes\,images\
+!COPY,dn_maintenance\pdf\
+!COPY,mnt\
+!COPY,parts\
+
+#Document Commands
+!PRODUCT,VideoRay Maintenance
+!DOC_VERSION,Version: 0.00.00 Dutch Navy
+!TEMPLATE,vrtemplate.htm
+!PRINTTEMPLATE,vrtemplate_print.htm,print.htm
+
+#Documentation Generation
+*,Introduction,,index.htm,,index_sb.htm
+**,Copyright,,copyright.htm,,
+**,Table of Contents,,pro4_toc.htm,,
+**,About this Documentation,intro_about,dn_maintenance\intro_about.htm,intro_about.js,intro_about_sb.htm
+***,Customizing My_Notes,,custom_my_notes.htm,,
+
+*,Day One,day_1,dn_operator\day_1.htm,,
+**,Systems Overview,,overview.htm,,
+**,Quick Start Instructions,,intro_qs.htm,,
+***,Safety First,,qs_safety.htm,,qs_safety_sb.htm
+***,System Components,,qs_components.htm,,qs_components_sb.htm
+***,Pre-Dive Preparations,,qs_predive.htm,qs_predive.js,qs_predive_sb.htm
+***,Dive Operations,,qs_dive.htm,,
+***,Post-Dive Operations,,qs_postdive.htm,,qs_postdive_sb.htm
+
+**,Basic Piloting,,pilot_.htm,,
+***,First Dive,,pilot_drill.htm,,
+****,Vehicle Handling,,drill_random.htm,,
+****,Control Sensitivity,,drill_sensitivity.htm,,
+****,Drive a Box,,drill_box.htm,,
+****,Reverse Control,,drill_reverse.htm,,
+***,Lights and Camera,,pilot_lights.htm,,
+***,Gross Navigation,,pilot_vfrnav.htm,,
+****,Surface Reference,,vfrnav_surface.htm,,
+****,Dive / Surface,,vfrnav_dive.htm,,
+***,Instrument Navigation,,pilot_ifrnav.htm,,
+****,Heading Reference,,ifrnav_heading.htm,,
+****,Depth Reference,,ifrnav_depth.htm,,
+***,Practice Drills,,pilot_practice1.htm,,
+
+**,Systems Management,,systems_.htm,,
+***,Screen Layout,,systems_screen.htm,,
+***,Compass Instrument,,systems_compass.htm,,
+***,Depth Instrument,,systems_depth.htm,,
+***,Camera Menu,,systems_menu.htm,,
+***,Text Overlay,,systems_text.htm,,
+***,Still Images,,systems_still.htm,,
+***,Video Recording,,systems_video.htm,,
+***,Practice Drills,,pilot_practice2.htm,,
+
+*,Day Two,day_2,dn_maintenance\day_2.htm,,
+**,Support Services,,support.htm,,
+**,Best Practices,,mnt_best_practice.htm,,
+**,Routine Maintenance,,mnt_procedures.htm,,
+***,Software Updates,,cockpit_updates.htm,cockpit_updates.js,cockpit_updates_sb.htm
+***,Propellers,,procedures_props.htm,,
+***,Cartridge Seals,,procedures_cartridge_seals.htm,,procedures_cartridge_seals_sb.htm
+****,Example Cartridge Seals,,mnt_cartridge_seals.htm,,
+***,Light Domes or Modules,,procedures_lights.htm,,
+***,Camera Domes,,procedures_domes.htm,,
+n**,ROV Disassembly,NUL,mnt/index.htm,,
+
+*,Day Three,day_3,dn_maintenance\day_3.htm,,
+n**,ROV Assembly,NUL,mnt/index.htm,,
+**,ROV QC Procedures,,rov_qc.htm,,
+
+*,Day Four,day_4,dn_maintenance\day_4.htm,,
+**,Tether Termination,,amnt_tether_term1.htm,,
+**,Control Panel,,amnt_panel.htm,,
+**,Computer,,amnt_computer.htm,,
+**,Monitor,,amnt_monitor.htm,,
+**,Hand Controller,,amnt_controller.htm,,
+**,Accessories:,,amnt_accessories.htm,,
+***,Manipulator,,amnt_manipulator.htm,,
+***,Cutter,,amnt_cutter.htm,,
+***,Laser,,amnt_laser.htm,,
+***,BlueView Sonar,,amnt_blueview.htm,,
+***,Altimeter,,amnt_echosounder.htm,,
+***,LBL,,amnt_lbl.htm,,
+***,PAM,,amnt_pam.htm,,
+
+*,Day Five,day_5,dn_maintenance\day_5.htm,,
+**,Tether Termination ,,amnt_tether_term2.htm,,
+**,Diagnostics and Repair,,mnt_diagnostics.htm,,
+***,Emergency Situations,,mnt_emergency.htm,,
+***,Power,,diag_power.htm,,
+***,Communications,,diag_comms.htm,,
+***,Control,,diag_control.htm,,
+***,Video,,diag_video.htm,,
+
+*,Reference Documents,,dnm_ref.htm,,
+**,ROV Schematics,,rov_schematics.htm,,
+***,Main Hull Assembly,,Pro4_Stage1.htm,,
+***,Vertical Thruster,,Pro4_Stage2.htm,,
+***,Termination Block,,Pro4_Stage3.htm,,
+***,Pressure Sensor,,Pro4_Stage4.htm,,
+***,Horizontal Thrusters,,Pro4_Stage5.htm,,
+***,Wire Harness,,Pro4SubWireHarness15b.htm,,
+**,Control Panel Schematics,,panel_schematics.htm,,
+***,OverView,,control_panel_v1rj.htm,,
+***,AC Input,,pro4_wire_ac_in.htm,,
+***,AC Output,,pro4_wire_ac_out.htm,,
+***,75 V DC LIM,,pro4_wire_75v_lim.htm,,
+***,12 V DC LIM,,pro4_wire_12v_lim.htm,,
+***,12 V DCFan,,pro4_wire_12v_fan.htm,,
+***,Communication,,pro4_wire_comm.htm,,
+***,Video,,pro4_wire_video.htm,,
+***,Spare Pair,,pro4_wire_spare.htm,,
+**,QC Documents,,qc_docs.htm,,
+***,Pre QC,,qc_setup.htm,,
+***,Basic Functions QC,,qc_basic.htm,,
+***,In-Water QC,,qc_inwater.htm,,
+***,Final QC,,qc_final.htm,,
+**,Parts Navigator,NUL,parts/index.htm,,
+**,Removal & Replacement,NUL,mnt/index.htm,,

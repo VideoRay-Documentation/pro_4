@@ -1,0 +1,30 @@
+<h1>Compass Calibration - Vector Nav</h1>
+
+<p>To calibrate the Vector Nav compass, follow these steps:</p>
+
+<ol>
+  <li>Start VideoRay Cockpit.</li>
+  <li>Click on the Engine Room button on the Control Bar.</li>
+  <li>Unlock the controls.</li>
+  <li>Click on the Calibrate Compass button, which has the magnet icon on it.</li>
+  <li>In the window that opens, select a Virtual Port (recommended Port is COM17).  Set the baud rate to 115200 if it is not already.<p><img src="../../pro_4/images/compass_calibration_vn.png"></p></li>
+  <li>Minimize the Engine Room</li>
+  <li>Start the Vector Nav Sensor Explorer from the Windows Start Menu.</li>
+  <li>Select a Virtual Port (recommended port is COM18).  Set the baud rate to 115200 if it is not already.<p><img src="../../pro_4/images/compass_calibration_vn_connect.png"></p></li>
+  <li>Ensure Query Sensor after connecting is checked.</li>
+  <li>Click on "Connect."</li>
+  <li>Right click on Sensor A in the upper left pane, and select Tasks->Perform Hard/Soft Iron Calibration.</li>
+  <li>In the window that opens, click on Start Calibration.<p><img src="../../pro_4/images/compass_calibration_vn_start.png"></p></li>
+  <li>Slowly rotate the ROV so that it passes through all orientations.  The easiest way to do this is to think of the dome as a pain brush and you are painting the inside of a sphere.  Start with the ROV facing straight down.  Lift the ROV in an arc until it faces straight up.  Rotate 15 degrees.  Lower the ROV to face straight down again.  Rotate 15 degrees and repeat this process of up and down arcs until you have rotated a full circle.</li>
+  <li>Continue until the measurements have been completed and "Write Parameters to Chip" button appears.<p><img src="../../pro_4/images/compass_calibration_vn_save.png"></p></li>
+  <li>Click on Write Parameters to Chip button.</li>
+  <li>Close the Vector Nav Sensor Explorer.</li>
+  <li>Expand the Engine Room.</li>
+  <li>Select None in the Port selection of the Compass Settings Window.</li>
+  <li>Close the Compass Settings window.</li>
+  <li>Close the Engine Room.</li>
+  <li>Check the calibration against known source.</li>
+  </ol>
+
+
+<p><img src="../../required/images/icon_note.gif"> Support for the Vector Nav compass requires VideoRay Cockpit version 1.8.35 or higher and ROV firmware version 2.6.4 or higher.</p>

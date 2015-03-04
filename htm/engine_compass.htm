@@ -1,19 +1,28 @@
 <h1>Compass Calibration</h1>
 
+<p><img src="../../required/images/icon_note.gif"> Compass Calibration is not the same as setting the compass declination.  If all you need to do is set the compass to account for local magnetic declination, see the <a href="../../pro_4/html/settings_system_compass.html">Compass</a> section under User Settings for information about setting the compass declination.
+
+<p>The compass is calibrated at the factory.  For most operations, the compass should not need to be calibrated.  If you are doing precise survey work or using VideoRay CoPilot's autonomous piloting products, you may need to calibrate the compass.</p>
+
+<p><img src="../../required/images/icon_note.gif"> This process does not normally need to be repeated in the field.  If you think there is a problem with the compass calibration, you should contact VideoRay Technical Support for advice before attempting to execute this procedure.</p>
+
 <img src="../../pro_4/images/er_compass_cal.png"></p>
 
 <p><b>Compass Calibration Button</b></p>
 
-<p><img src="../../required/images/icon_note.gif"> This process does not normally need to be repeated in the field.  If you think there is a problem with the compass calibration, you should contact VideoRay Technical Support for advice before attempting to execute this procedure.</p>
+<h2>Basic Procedures</h2>
+
+<p>The specific procedures will depend upon the compass installed in the Pro 4 ROV.  In general these are the steps that must be performed:</p>
+
+<ol>
+  <li>Make sure the sub is configured with accessories in the way it will be used.</li>
+  <li>The calibration must be performed with the ROV away from all magnetic / ferrous objects and the person performing the calibration should not have any magnetic / ferrous objects (remove belt buckle, keys, cell phone, etc.).
+  <li>Launch the calibration procedure from engine room by clicking on the magnet icon.</li>
+  <li>Slowly rotate the ROV so that it passes through all orientations.  The easiest way to do this is to think of the dome as a pain brush and you are painting the inside of a sphere.  Start with the ROV facing straight down.  Lift the ROV in an arc until it faces straight up.  Rotate 15 degrees.  Lower the ROV to face straight down again.  Rotate 15 degrees and repeat this process of up and down arcs until you have rotated a full circle.</li>
+  <li>Save the Calibration.</li>
+  <li>Check the displayed magnetic heading against a magnetic compass.</li>
+  <li>If the calibration does not match the magnetic compass, repeat the calibration sequence.</li>
+  </ol>
 
 <p><img src="../../required/images/icon_note.gif"> The ROV firmware must be version 2.3.3 or higher.</p>
 
-<ol>
-  <li>Make sure the sub is complete (all motors and shields in place) and the board set is not moving inside the hull. The sub should have the rear port ring in place but does not need the rods or rear dome installed.</li>
-  <li>Launch the calibration instrument from engine room by clicking on the magnet icon.</li>
-  <li>Slowly rotate the sub in each axis one full rotation so that the sub ends up going upside down and all the way back to right side up in each of the 3 axes. The order doesn't matter and it doesn't matter if you accidentally do a rotation more than once. Roll = left over right, Pitch = end over end, and Yaw = rotating horizontally left or right.</li>
-  <li>Press the "Ok Mag Cal" button.  The ROV will now use a new calibration based on the collected data.</li>
-  <li>At this point you can check the displayed magnetic heading against a magnetic compass.</li>
-  <li>If the calibration does not match the magnetic compass, click "Clear" to clear all data and start the rotation sequence again. </li>
-  <li>Press the "SAVE" button to store the data on the ROV and in the node.</li>
-  </ol>

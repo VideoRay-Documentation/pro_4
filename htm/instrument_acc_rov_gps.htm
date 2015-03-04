@@ -1,0 +1,51 @@
+<h1>ROV GPS Instrument</h1>
+
+<p>The ROV GPS instrument provides ROV location, status and filter settings for the ROV GPS.</p>
+
+<p><img src="../../required/images/icon_note.gif"> The GPS data is only valid when the ROV is at the surface and the GPS antenna is exposed.</p>
+
+<h2>Display</h2>
+
+<p><img src="../../pro_4/images/instrument_rov_gps_good.png"></p>
+
+<h2>Use</h2>
+
+<p>The ROV GPS instrument will display the current location and status of the ROV GPS.  It also has the ability to set filter criteria that control whether the GPS information is passed from VideoRay Cockpit to other applications.</p>
+
+<h3>Position</h3>
+
+<p>The Latitude and Longitude of the GPS fix is displayed in the top center of the instrument.</p>
+
+<h3>Status</h3>
+
+<ul>
+  <li>Good - Data is being received and passed.  If the Toggle Filter is On, the GPS has passed all filter criteria.</li>
+  <li>Bad - Data is being received, but the data does not pass at least one of the filter criteria (see below).</li>
+  <li>No - No Data is being received.</li>
+  </ul>
+
+<p>The number of satellites being observed is indicated by blue indicator lights.</p>
+
+<h3>Filters</h3>
+
+<p>Filters allow for better operational performance by eliminating GPS fixes that are based on poor data and have a greater degree of uncertainty.  These filters can suppress apparent jumps in the reported location due to such erroneous data.  Each filter is defined by a slider that represents a cutoff threshold.  The cutoff threshold is set by moving the slider left or right on a scale.  The value of the cutoff threshold is displayed as a tool tip when the mouse is hovered over the slider.  The value of the data being received is displayed as a bar on a scale.  If the value is good, the bar is green.  If the value does not meet the cutoff threshold, the bar is red.</p>
+
+<p><b>Filter Settings</b></p>
+
+<ul>
+  <li>SNR (Signal to Noise Ratio) - The strength of the actual signal relative to background noise.  Higher SNRs mean that the signal is stronger, which usually implies a better result.  The SNR threshold setting should be set to 30 initially.  If the SNR is below the threshold, the GPS information will not be passed.</li>
+  <li>Speed (Knots) - The maximum ground speed of the vehicle based on successive GPS readings.  The speed threshold setting should be set to the maximum expected speed of the vehicle - typically 1 knot.  If the Speed is above the threshold, it is assumed that the GPS information is invalid and the GPS information will not be passed.</li>
+  <li>HDOP (Horizontal Dilution of Precision) is a measure of the impact of the geometry of the observed satellites on the quality of the fix. Lower HDOPs mean that the geometric quality is better, which usually implies a better result.  The HDOP threshold setting should be set to 2 initially  If the HDOP is above the threshold, the GPS information will not be passed.  HDOP values are generally defined as follows:
+    <ul>
+      <li>1-2 Excellent</li>
+      <li>2-5 Good</li>
+      <li>5-10 Moderate</li>
+      <li>10+ Poor</li>
+      </ul>
+    </li>
+  <li>DGPS (Differential GPS)	DGPS provides a ground referenced correction to the GPS signal to improve the accuracy.  If DGPS Only is checked, GPS Information will not be passed unless the signal is recognized as DGPS quality.  If DGPS is not checked, the DGPS quality of the signal checked.</li>
+  </ul>
+
+<p><b>Toggle Filter</b> - Toggle filter allows the filter to be turned on or off.  If the filter is On, only those signals that meet all filter criteria are passed.  If the filter is Off, GPS information is always passed.</p>
+
+<p><img src="../../required/images/icon_note.gif"> The VideoRay ROV GPS is optional and may not be included in all VideoRay Pro 4 configurations.</a>

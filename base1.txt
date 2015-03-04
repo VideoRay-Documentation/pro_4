@@ -1,28 +1,26 @@
-#Documentation Generation
-!INCLUDE,required/intro_.txt,1
-!INCLUDE,required/overview_.txt,1
-
 *,Equipment Guide,,equip_.htm,,,
-**,ROV,,equip_rov.htm,,,../images/rov.jpg
+1**,ROV,,equip_rov.htm,,,../../pro_4_ultra/images/rov.jpg
+4**,ROV,,equip_rov.htm,,,../../pro_4/images/rov.jpg
 v***,ROV Connections,,rov_connections.htm,,rov_connections_sb.htm,
-v***,Buoyancy,,rov_buoyancy.htm,,,
+v***,Buoyancy,,rov_buoyancy.htm,,rov_buoyancy_sb.htm,
 v***,Propulsion,,rov_thrusters.htm,,rov_thrusters_sb.htm,
 v***,Main Camera,,rov_camera.htm,,rov_camera_sb.htm,
 v***,Main Lights,,rov_lights.htm,,rov_lights_sb.htm,
 v***,Sensors,,rov_sensors.htm,,rov_sensors_sb.htm,
-#v***,Integration Frame,,rov_integration_frame.htm,,,
 
-**,Control Panel,,equip_panel.htm,,,../images/control_panel.jpg
+1**,Control Panel,,equip_panel.htm,,,../../pro_4_ultra/images/control_panel.jpg
+4**,Control Panel,,equip_panel.htm,,,../../pro_4/images/control_panel.jpg
 ***,Safety Circuits,,panel_safety.htm,,,
-4***,Switches and Connections,,panel_connections.htm,,panel_connections_sb.htm,
-1***,Switches and Connections,,panel_connections_ultra.htm,,panel_connections_sb.htm,
+***,Switches and Connections,,panel_connections.htm,,panel_connections_sb.htm,
 v***,Computer,,panel_computer.htm,,,
-4v****,Dell 4000 Series,,computer_dell.htm,,,
+1v****,Lenovo Yoga Tablet,,computer_lenovo.htm,,,
+4p****,Dell 4000 Series,,computer_dell.htm,,,
 4v****,Panasonic Toughbook,,computer_toughbook.htm,,,
-1v****,Lenova Yoga Tablet,,computer_lenova.htm,,,
 4v***,Monitor,,panel_monitor.htm,,,
 
-**,Hand Controller,,equip_controller.htm,equip_controller.js,,../images/hand_controller_v1rb.png
+1**,Hand Controller,,equip_controller.htm,equip_controller.js,,../../pro_4_ultra/images/hand_controller_v1rb.png
+4**,Hand Controller,,equip_controller.htm,equip_controller.js,,../../pro_4/images/hand_controller_v1rb.png
+#v***,Hand Controller Functions,,equip_controller_functions.htm,,,
 v***,Help,,controller_help.htm,,,
 v***,Joystick,,controller_joystick.htm,,controller_joystick_sb.htm,
 v***,Depth Control,,controller_depth.htm,,controller_depth_sb.htm,
@@ -33,21 +31,29 @@ v***,Lights,,controller_lights.htm,,controller_lights_sb.htm,
 v***,Snapshot,,controller_snapshot.htm,,controller_snapshot_sb.htm,
 v***,Record,,controller_record.htm,,controller_record_sb.htm,
 v***,Manipulator/Cutter,,controller_manip.htm,,controller_manip_sb.htm,
-4v***,Lateral Thruster,,controller_lateral.htm,,controller_lateral_sb.htm,
+#4v****,Lateral Thruster,,controller_lateral.htm,,controller_lateral_sb.htm,
+#v***,Hand Controller Support,,equip_controller_support.htm,,,
+#4v****,VideoRay Industrial Controller,,controller_videoray_industrial.htm,,,
+#4v****,Logitech RumblePad,,controller_logitech_rumblepad.htm,,,
+#4v****,Logitech Extreme 3D,,controller_logitech_extreme.htm,,,
+#4v****,Apem IP Desktop,,controller_apem_ip_desktop.htm,,,
+#4v****,Cyborg X Flight Stick,,controller_cyborg_x_flight_stick.htm,,,
 
-4**,Tether,,equip_tether.htm,,equip_tether_sb.htm,../images/tether.jpg
-1**,Tether,,equip_tether.htm,,,../images/tether.jpg
-v***,TDS,,tether_tds.htm,,,../images/tds.jpg
+1**,Tether,,equip_tether.htm,,,../../pro_4_ultra/images/tether.jpg
+4**,Tether,,equip_tether.htm,,equip_tether_sb.htm,../../pro_4/images/tether.jpg
+1v***,TDS,,tether_tds.htm,,,../../pro_4_ultra/images/tds.jpg
+4v***,TDS,,tether_tds.htm,,,../../pro_4/images/tds.jpg
 
 **,Connections Summary,,equip_connections.htm,,,
 
 v**,Accessories,,equip_acc.htm,,,
 v***,Included Accessories,,acc_included.htm,,,
-v***,Optional Accessories,accessories_category1.html,library/htm/accessories_cat.htm,,,
+v***,Optional Accessories,accessories_category1.html,library/htm/_accessories_cat.htm,,,
 v***,Mission Support Accessories,,acc_mission.htm,,,
 v***,Integration Overview,,acc_overview.htm,,acc_overview_sb.htm,
 
-*,VideoRay Cockpit Guide,,cockpit_.htm,cockpit_.js,,../images/vrcockpit_baseline.png
+1*,VideoRay Cockpit Guide,,cockpit_.htm,cockpit_.js,,../../pro_4_ultra/images/vrcockpit_baseline.png
+4*,VideoRay Cockpit Guide,,cockpit_.htm,cockpit_.js,,../../pro_4/images/vrcockpit_baseline.png
 **,Video Window,,cockpit_video.htm,cockpit_video.js,,
 v***,Video Text Overlay,,cockpit_overlay_text.htm,cockpit_overlay_text.js,cockpit_overlay_text_sb.htm,
 v***,Digital On-Screen Graphic,,cockpit_overlay_graphic.htm,,cockpit_overlay_graphic_sb.htm,
@@ -56,6 +62,7 @@ v***,Digital On-Screen Graphic,,cockpit_overlay_graphic.htm,,cockpit_overlay_gra
 ***,ROV Health,,instrument_health.htm,instrument_health.js,,
 ***,Control Sensitivity,,instrument_sensitivity.htm,,instrument_sensitivity_sb.htm,
 ***,Compass,,instrument_compass.htm,instrument_compass.js,,
+***,Ribbon Compass,,instrument_ribbon_compass.htm,,,
 ***,Depth,,instrument_depth.htm,instrument_depth.js,instrument_depth_sb.htm,
 ***,(Pseudo) Altimeter,,instrument_altimeter.htm,instrument_altimeter.js,instrument_altimeter_sb.htm,
 ***,Camera and Lights,,instrument_camera.htm,,,
@@ -76,17 +83,18 @@ v*****,Motion Detection,,menu_motion.htm,,menu_sb.htm,
 v*****,Display,,menu_display.htm,,menu_sb.htm,
 v****,Factory Default,,menu_default.htm,,,
 v****,Exit,,menu_exit.htm,,,
-4***,Water Temperature,,instrument_temp.htm,,instrument_temp_sb.htm,
-4***,Turns Indicator,,instrument_turns.htm,,,
+v***,Water Temperature,,instrument_temp.htm,,instrument_temp_sb.htm,
+v***,Turns Indicator,,instrument_turns.htm,,,
 v***,Accessory Instruments,,instrument_acc.htm,,,
 v****,Manipulator/Cutter,,instrument_acc_manip.htm,,,
 v****,External Camera,,instrument_acc_camera_external.htm,,,
-4v****,HD Camera,,instrument_acc_hd_camera.htm,,,
-4v****,LYYN Controls,,instrument_acc_lyyn.htm,,instrument_acc_lyyn_sb.htm,
-4v****,Lateral Thruster,,instrument_acc_lateral.htm,,,
-4v****,Laser Scaling Device,,instrument_acc_laser.htm,,,
-4v****,Radiation Sensor,,instrument_acc_rad.htm,,,
-4v****,PAM,,instrument_acc_pam.htm,,,
+#v****,HD Camera,,instrument_acc_hd_camera.htm,,,
+v****,LYYN Controls,,instrument_acc_lyyn.htm,,instrument_acc_lyyn_sb.htm,
+v****,ROV GPS,,instrument_acc_rov_gps.htm,,,
+#v****,Lateral Thruster,,instrument_acc_lateral.htm,,,
+v****,Laser Scaling Device,,instrument_acc_laser.htm,,,
+v****,Radiation Sensor,,instrument_acc_rad.htm,,,
+v****,PAM,,instrument_acc_pam.htm,,,
 
 **,Control Bar,,cockpit_control.htm,cockpit_control.js,,
 ***,Close VideoRay Cockpit,,control_close.htm,,,
@@ -98,17 +106,19 @@ v****,Scheduled Maintenance,,service_maintenance.htm,,,
 v****,Diagnostics Console,,service_diag_console.htm,,,
 v****,Communications Status,,service_comms_status.htm,,,
 ***,Engine Room,,control_engine.htm,control_engine.js,,
-4v****,Status Information,,engine_status.htm,,,
-4v****,Engine Room Controls,,engine_controls.htm,,,
-4v****,Systems Tuning,,engine_tuning.htm,,,
+v****,Status Information,,engine_status.htm,,,
+v****,Engine Room Controls,,engine_controls.htm,,,
+v****,Systems Tuning,,engine_tuning.htm,,,
 v****,Compass Calibration,,engine_compass.htm,,,
+#v*****,Base Compass,,engine_compass_kcf.htm,,,
+v*****,Advanced Compass,,engine_compass_vn.htm,,,
 ***,Access Images and Videos,,control_data.htm,,,
 ***,User Settings,,control_settings.htm,control_settings.js,,
 ****,Instrument Settings,,settings_instruments.htm,settings_instruments.js,settings_instruments_sb.htm,
 *****,Instruments Display,,settings_instruments_display.htm,,,
 *****,Depth Gauge Settings,,settings_depth_gauge.htm,,,
 *****,Turns Indicator Settings,,settings_turns_indicator.htm,,,
-*****,HD Camera Settings,,settings_hd_camera.htm,,,
+#*****,HD Camera Settings,,settings_hd_camera.htm,,,
 ****,System Settings,,settings_system.htm,settings_system.js,,
 v*****,Data Directory,,settings_system_data.htm,,,
 v*****,Depth Sensor,,settings_system_depth.htm,,,
@@ -119,16 +129,16 @@ v******,Advanced Depth Settings,,settings_adv_depth.htm,,,
 *****,Video Capture and Display,,settings_system_video.htm,,,
 v******,Video Capture Settings,,settings_adv_capture.htm,,,
 v******,Advanced Video Settings,,settings_adv_video.htm,,,
-4****,Data Import,,settings_import.htm,,,
-4****,Data Export,,settings_export.htm,,,
-4v****,Network Remote Configuration,,settings_network.htm,,,
-4***,Launch Applications,,control_applications.htm,,,
+****,Data Import,,settings_import.htm,,,
+****,Data Export,,settings_export.htm,,,
+v****,Network Remote Configuration,,settings_network.htm,,,
+***,Launch Applications,,control_applications.htm,,,
 ***,Instruments Display,,control_display.htm,,,
-4****,Lock/Unlock Instruments,,control_lock_instruments.htm,,,
+****,Lock/Unlock Instruments,,control_lock_instruments.htm,,,
 ****,Set Instruments Opaque,,control_opaque.htm,,control_display_sb.htm,
 ****,Set Instruments Transparent,,control_transparent.htm,,control_display_sb.htm,
 ****,Set Instruments Off,,control_off.htm,,control_display_sb.htm,
-4v***,Remote Connect,,control_remote_connect.htm,,,
+v***,Remote Connect,,control_remote_connect.htm,,,
 
 v**,Software Management,,cockpit_mgmt.htm,,,
 v***,Software Installation,,cockpit_install.htm,,,
@@ -138,7 +148,11 @@ v***,Application Integration,,cockpit_app.htm,,,
 
 !INCLUDE,library/oper_.txt,1
 
-*,Maintenance Manual,nul,../../pro_4_mnt_n/html/index.htm,,,
+1*,Maintenance Manual,nul,../../pro_4_ultra_mnt_n/html/index.htm,,,
+4*,Maintenance Manual,nul,../../pro_4_mnt_n/html/index.htm,,,
+!INCLUDE,mnt/mnt_n.txt,2
+
+**,Removal and Replacement,nul,../../pro_4_mnt_n/html/_pro_4_mntmaster.htm,,,
 #**,Best Practices,,mnt_best_practice.htm,,,
 #**,Emergency Situations,,mnt_emergency.htm,,,
 #**,Routine Maintenance,,mnt_procedures.htm,,,
@@ -154,4 +168,3 @@ v***,Application Integration,,cockpit_app.htm,,,
 #v***,Hand Controller,,diag_controller.htm,,,
 #v***,Video,,diag_video.htm,,library/htm/ground_lift_sb.htm,
 
-!INCLUDE,mnt/mnt_n.txt,2

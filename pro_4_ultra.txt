@@ -1,10 +1,18 @@
 #Document Commands
-!PRODUCT,Pro 4 Ultra User Manual
-!VERSION,Version: 1.00.00
+!PRODUCT,Pro 4 Ultra
+!VERSION,1.08.10
+!DOC_TYPE,Operator's Manual
 !OUT_DIR,pro_4_ultra/
 !VALID_PAGES,1
 !VALID_TEXT,1
-!TEMPLATE_COVER,required/htm/template_cover.htm,cover.htm
+!TEMPLATE_COVER,required/htm/template_index_print.htm,index_print.htm
+
+!LOCAL_CSS,pro_4_ultra.css
+!IMG_PATH,../../pro_4_ultra/images/
+
+#Documentation Generation
+!INCLUDE,required/intro_.txt,1
+!INCLUDE,required/overview_qs_.txt,1
 
 !INCLUDE,pro_4/base1.txt,1
 

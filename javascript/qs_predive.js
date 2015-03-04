@@ -16,11 +16,11 @@ if (document.images) {
    inx = new Image;
    out = new Image;
    
-   cockpit.src = '../images/vrcockpit_ship.png';
-   cockpitBase.src = '../images/vrcockpit_ship.png';
-   video.src = '../images/vrcockpit_ship_video.png';
-   instruments.src = '../images/vrcockpit_ship_instruments.png';
-   control.src = '../images/vrcockpit_ship_control.png';
+   cockpit.src = '../images/vrcockpit_baseline.png';
+   cockpitBase.src = '../images/vrcockpit_baseline.png';
+   video.src = '../images/vrcockpit_video_highlight.png';
+   instruments.src = '../images/vrcockpit_instruments_highlight.png';
+   control.src = '../images/vrcockpit_control_highlight.png';
 
    controller.src = '../images/hand_controller_v1rb.png';
    controllerBase.src = '../images/hand_controller_v1rb.png';

@@ -1,0 +1,45 @@
+<h2>PAM (Protocol Adapter Multiplexer)</h2>
+
+<p>The PAM is an interface device, whose acronym stands for Protocol Adapter Multplexer.</p>
+
+
+<p><b>Pro 4 Accessory Port</b></p>
+
+<ol>
+  <li>Video -</li>
+  <li>Video +</li>
+  <li>24 VDC +</li>
+  <li>Spare Pair conductor 1</li>
+  <li>Ground</li>
+  <li>Spare Pair conductor 2</li>
+  <li>ROV Comms Data Bus</li>
+  <li>ROV Comms Data Bus</li>
+  <li>12 VDC +</li>
+  </ol>
+
+<p>Notice that the Pro 4 includes a spare pair (pins 4 and 6) AND an extra data channel by exposing the ROV comms data from the topside directly at the back of the ROV (pins 7 and 8). In order to take advantage of this, VideoRay created another processor just like the one in the ROV and add a few interface components, and PAM was born.</p>
+
+<p>PAM allows VideoRay to tap into the ROV comms data path and piggy-back information on the bus. For example, an altimeter sends readings a few times a second. Why use the spare pair for such a low bandwidth demand? By attaching it to the ROV comms data bus through a PAM and using VideoRay Cockpit to direct traffic (the Multiplexing part), we can keep the spare pair free for a high bandwidth devices like sonar and still use an altimeter at the same time. On the Pro 3, this would not be possible without another cable being married to the tether.</p>
+
+<p>Now, to explain the "Adapter" part, we have to realize that some accessories use different protocols for data transmission, such as RS-232 or RS-485. Those interface components we mentioned include capabilities to handle either, and thus adapt the protocol to meed the needs of the device.</p>
+
+<p>The PAM therefore can be used to "adapt" data protocols and "multiplex" data from several devices onto one bus.</p>
+
+<p>Some examples of what PAM can do include interfacing a variety of otherwise non compatible accessories, turning accessories on or off from the surface while submerged and controlling analog devices like the intensity of auxiliary lights.</p>
+
+<p>Based on it's architecture of using the same processor as is used in the ROV, we also affectionately call PAM, "ROV brains to go."</p>
+
+<h3>Virtual Ports</h3>
+
+<p>In order to realize the value of the PAM, we need a way to communicate data sent over the ROV communications bus to other applications.  Virtual Ports are used to handle this process.  Virtual ports are equivalent of hardware ports and a cable to connect them.  They are defined in pairs, and the cable is handled in software.  By default VideoRay defines the following port pairs:</p>
+
+<ul>
+  <li>15-16 Reserved for the Smart Tether</li>
+  <li>17-18 Reserved for the Altimeter</li>
+  <li>19-20 Reserved for the LBL</li>
+  <li>31-32 Open</li>
+  </ul>
+
+<p>Additional port pairs can be defined if necessary for additional applications.</p>
+
+<p><img src="../../images/icon_note.gif"> When configuring standard hardware COM ports for other devices, it is important to make sure that the device is not configured to use a virtual port.  Unexpected results may occur if a hardare device is configured to use a virtual port.</p>
