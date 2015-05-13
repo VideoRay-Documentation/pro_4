@@ -54,7 +54,7 @@ case_control|word|description|  //* forces case sensitive,  ~ separates variatio
 |Diagnostics|Method for identifying the cause of a problem|
 |Digital Slow Shutter|Camera feature to improve image in low light situations|
 |Edit|The process of modifying data|
-*|ELC|Lens type setting required for optimal image from the VideoRay Pro 4 camera|
+*|ELC|Lens type setting required for optimal image from the VideoRay Pro 4<!--1--> Ultra<!--/1--> camera|
 |Engine Room|VideoRay Cockpit interface to access advanced status information and settings|
 |Ethernet|Data Protocol and connector style|
 |Exit|Close the camera menu or VideoRay Cockpit|

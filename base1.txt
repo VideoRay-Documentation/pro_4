@@ -1,6 +1,13 @@
+!DOC_TYPE,Operator's Manual
+!OUT_DIR,pro_4/
+!TEMPLATE_COVER,required/htm/template_index_print.htm,index_print.htm,../../required/javascript/choose.js
+
+#Documentation Generation
+!INCLUDE,required/intro_qs_.txt,1
+!INCLUDE,required/overview_qs_.txt,1
+
 *,Equipment Guide,,equip_.htm,,,
-1**,ROV,,equip_rov.htm,,,../../pro_4_ultra/images/rov.jpg
-4**,ROV,,equip_rov.htm,,,../../pro_4/images/rov.jpg
+**,ROV,,equip_rov.htm,,,../../pro_4/images/rov.jpg
 v***,ROV Connections,,rov_connections.htm,,rov_connections_sb.htm,
 v***,Buoyancy,,rov_buoyancy.htm,,rov_buoyancy_sb.htm,
 v***,Propulsion,,rov_thrusters.htm,,rov_thrusters_sb.htm,
@@ -8,29 +15,29 @@ v***,Main Camera,,rov_camera.htm,,rov_camera_sb.htm,
 v***,Main Lights,,rov_lights.htm,,rov_lights_sb.htm,
 v***,Sensors,,rov_sensors.htm,,rov_sensors_sb.htm,
 
-1**,Control Panel,,equip_panel.htm,,,../../pro_4_ultra/images/control_panel.jpg
+1**,Control Panel,,equip_panel.htm,,,../../pro_4/images/control_panel_ultra.jpg
 4**,Control Panel,,equip_panel.htm,,,../../pro_4/images/control_panel.jpg
 ***,Safety Circuits,,panel_safety.htm,,,
-***,Switches and Connections,,panel_connections.htm,,panel_connections_sb.htm,
+4***,Switches and Connections,,panel_connections.htm,,panel_connections_sb.htm,
 v***,Computer,,panel_computer.htm,,,
 1v****,Lenovo Yoga Tablet,,computer_lenovo.htm,,,
-4p****,Dell 4000 Series,,computer_dell.htm,,,
+4v****,Dell 4000 Series,,computer_dell.htm,,,
 4v****,Panasonic Toughbook,,computer_toughbook.htm,,,
 4v***,Monitor,,panel_monitor.htm,,,
 
-1**,Hand Controller,,equip_controller.htm,equip_controller.js,,../../pro_4_ultra/images/hand_controller_v1rb.png
+1**,Hand Controller,,equip_controller.htm,equip_controller.js,,../../pro_4/images/wireless-gamepad-f710feature-image.png
 4**,Hand Controller,,equip_controller.htm,equip_controller.js,,../../pro_4/images/hand_controller_v1rb.png
 #v***,Hand Controller Functions,,equip_controller_functions.htm,,,
-v***,Help,,controller_help.htm,,,
-v***,Joystick,,controller_joystick.htm,,controller_joystick_sb.htm,
-v***,Depth Control,,controller_depth.htm,,controller_depth_sb.htm,
-v***,Camera Switch,,controller_camera.htm,,,
-v***,Camera Tilt,,controller_tilt.htm,,controller_tilt_sb.htm,
-v***,Camera Focus,,controller_focus.htm,,controller_focus_sb.htm,
-v***,Lights,,controller_lights.htm,,controller_lights_sb.htm,
-v***,Snapshot,,controller_snapshot.htm,,controller_snapshot_sb.htm,
-v***,Record,,controller_record.htm,,controller_record_sb.htm,
-v***,Manipulator/Cutter,,controller_manip.htm,,controller_manip_sb.htm,
+4v***,Help,,controller_help.htm,,,
+4v***,Joystick,,controller_joystick.htm,,controller_joystick_sb.htm,
+4v***,Depth Control,,controller_depth.htm,,controller_depth_sb.htm,
+4v***,Camera Switch,,controller_camera.htm,,,
+4v***,Camera Tilt,,controller_tilt.htm,,controller_tilt_sb.htm,
+4v***,Camera Focus,,controller_focus.htm,,controller_focus_sb.htm,
+4v***,Lights,,controller_lights.htm,,controller_lights_sb.htm,
+4v***,Snapshot,,controller_snapshot.htm,,controller_snapshot_sb.htm,
+4v***,Record,,controller_record.htm,,controller_record_sb.htm,
+4v***,Manipulator/Cutter,,controller_manip.htm,,controller_manip_sb.htm,
 #4v****,Lateral Thruster,,controller_lateral.htm,,controller_lateral_sb.htm,
 #v***,Hand Controller Support,,equip_controller_support.htm,,,
 #4v****,VideoRay Industrial Controller,,controller_videoray_industrial.htm,,,
@@ -39,21 +46,18 @@ v***,Manipulator/Cutter,,controller_manip.htm,,controller_manip_sb.htm,
 #4v****,Apem IP Desktop,,controller_apem_ip_desktop.htm,,,
 #4v****,Cyborg X Flight Stick,,controller_cyborg_x_flight_stick.htm,,,
 
-1**,Tether,,equip_tether.htm,,,../../pro_4_ultra/images/tether.jpg
-4**,Tether,,equip_tether.htm,,equip_tether_sb.htm,../../pro_4/images/tether.jpg
-1v***,TDS,,tether_tds.htm,,,../../pro_4_ultra/images/tds.jpg
-4v***,TDS,,tether_tds.htm,,,../../pro_4/images/tds.jpg
+**,Tether,,equip_tether.htm,,equip_tether_sb.htm,../../pro_4/images/tether.jpg
+v***,TDS,,tether_tds.htm,,,../../pro_4/images/tds.jpg
 
 **,Connections Summary,,equip_connections.htm,,,
 
 v**,Accessories,,equip_acc.htm,,,
 v***,Included Accessories,,acc_included.htm,,,
-v***,Optional Accessories,accessories_category1.html,library/htm/_accessories_cat.htm,,,
+#v***,Optional Accessories,accessories_category1.html,library/htm/_accessories_cat.htm,,,
 v***,Mission Support Accessories,,acc_mission.htm,,,
 v***,Integration Overview,,acc_overview.htm,,acc_overview_sb.htm,
 
-1*,VideoRay Cockpit Guide,,cockpit_.htm,cockpit_.js,,../../pro_4_ultra/images/vrcockpit_baseline.png
-4*,VideoRay Cockpit Guide,,cockpit_.htm,cockpit_.js,,../../pro_4/images/vrcockpit_baseline.png
+*,VideoRay Cockpit Guide,,cockpit_.htm,cockpit_.js,,../../pro_4/images/vrcockpit_baseline.png
 **,Video Window,,cockpit_video.htm,cockpit_video.js,,
 v***,Video Text Overlay,,cockpit_overlay_text.htm,cockpit_overlay_text.js,cockpit_overlay_text_sb.htm,
 v***,Digital On-Screen Graphic,,cockpit_overlay_graphic.htm,,cockpit_overlay_graphic_sb.htm,
@@ -62,7 +66,7 @@ v***,Digital On-Screen Graphic,,cockpit_overlay_graphic.htm,,cockpit_overlay_gra
 ***,ROV Health,,instrument_health.htm,instrument_health.js,,
 ***,Control Sensitivity,,instrument_sensitivity.htm,,instrument_sensitivity_sb.htm,
 ***,Compass,,instrument_compass.htm,instrument_compass.js,,
-***,Ribbon Compass,,instrument_ribbon_compass.htm,,,
+***,Ribbon Compass,,instrument_compass_ribbon.htm,instrument_compass_ribbon.js,,
 ***,Depth,,instrument_depth.htm,instrument_depth.js,instrument_depth_sb.htm,
 ***,(Pseudo) Altimeter,,instrument_altimeter.htm,instrument_altimeter.js,instrument_altimeter_sb.htm,
 ***,Camera and Lights,,instrument_camera.htm,,,
@@ -87,6 +91,7 @@ v***,Water Temperature,,instrument_temp.htm,,instrument_temp_sb.htm,
 v***,Turns Indicator,,instrument_turns.htm,,,
 v***,Accessory Instruments,,instrument_acc.htm,,,
 v****,Manipulator/Cutter,,instrument_acc_manip.htm,,,
+v****,Rotating Manipulator/Cutter,,instrument_acc_rotating_manip.htm,,,
 v****,External Camera,,instrument_acc_camera_external.htm,,,
 #v****,HD Camera,,instrument_acc_hd_camera.htm,,,
 v****,LYYN Controls,,instrument_acc_lyyn.htm,,instrument_acc_lyyn_sb.htm,
@@ -148,8 +153,7 @@ v***,Application Integration,,cockpit_app.htm,,,
 
 !INCLUDE,library/oper_.txt,1
 
-1*,Maintenance Manual,nul,../../pro_4_ultra_mnt_n/html/index.htm,,,
-4*,Maintenance Manual,nul,../../pro_4_mnt_n/html/index.htm,,,
+*,Maintenance Manual,nul,../../pro_4_mnt_n/html/index.htm,,,
 !INCLUDE,mnt/mnt_n.txt,2
 
 **,Removal and Replacement,nul,../../pro_4_mnt_n/html/_pro_4_mntmaster.htm,,,
