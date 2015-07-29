@@ -153,10 +153,12 @@ v***,Application Integration,,cockpit_app.htm,,,
 
 !INCLUDE,library/oper_.txt,1
 
-*,Maintenance Manual,nul,../../pro_4_mnt_n/html/index.htm,,,
+1*,Maintenance Manual,nul,../../pro_4_mnt_n/html_ultra/index.htm,,,
+4*,Maintenance Manual,nul,../../pro_4_mnt_n/html/index.htm,,,
 !INCLUDE,mnt/mnt_n.txt,2
 
-**,Removal and Replacement,nul,../../pro_4_mnt_n/html/_pro_4_mntmaster.htm,,,
+1**,Removal and Replacement,nul,../../pro_4_mnt_n/html_ultra/_pro_4_mntmaster.htm,,,
+4**,Removal and Replacement,nul,../../pro_4_mnt_n/html/_pro_4_mntmaster.htm,,,
 #**,Best Practices,,mnt_best_practice.htm,,,
 #**,Emergency Situations,,mnt_emergency.htm,,,
 #**,Routine Maintenance,,mnt_procedures.htm,,,

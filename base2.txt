@@ -1,5 +1,6 @@
 v*,Customization Guide,,custom_.htm,,,
 v**,Customize this Document,custom_my_notes2.html,required/htm/custom_my_notes.htm,,,
+v**,Custom Desktop Backgrounds,,desktop_backgrounds.htm,,,
 v**,Custom Checklists,,custom_checklists.htm,,,
 4v**,Hand Controller Mapping,,custom_controller.htm,,,
 #4v***,Hand Controller Installation,,custom_controller_installation.htm,,,
