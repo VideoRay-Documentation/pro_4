@@ -1,7 +1,7 @@
 <h1>VideoRay Cockpit Application Integration</h1>
 
 <!--1-->
-<p><a href="http://www.videoray.com/homepage/professional-rovs/videoray-pro-4.html" target="_blank"><img src="<!--##IMG_PATH##-->pro_4_ultra_limitations.png"></p></a>
+<p><a href="http://www.videoray.com/homepage/professional-rovs/videoray-pro-4.html" target="_blank"><img src="<!--##IMG_PATH##-->pro_4_ultra<!--3-->_lite<!--/3-->_limitations.png"></p></a>
 <div id="pro_4_ultra_limitation">
 <!--/1-->
 
@@ -11,7 +11,7 @@
 
 <p>For data communications with other applications, VideoRay Cockpit software includes a virtual COM port driver.  As an example of how this technology works, VideoRay Cockpit is integrated with the KCF Smart Tether.  Both programs need to access their respective hardware, but the KCF Smart Tether nodes and the ROV share a common communications bus.  This presents a problem because only one software application at a time can access the physical port to which the bus is attached.  In order to solve this problem, VideoRay Cockpit handles the communications with both hardware systems and passes information it receives from the tether nodes to a virtual COM port.  The KCF Smart Tether opens a companion virtual COM Port where it receives this data.  As you may have noticed, virtual COM ports are defined in pairs.  Typically one application writes to a port, and the other application reads from the companion port.  The virtual COM port driver supports multiple port pairs.</p>
 
-<p>A second example is the Desert Star AquaMap Shiphull.  Traditionally, this system used the APIC (Auxiliary Pair of Independent Conductors) in the tether, and the software "talked" directly to the mobile station mounted on the ROV.  This meant that other devices that require the APIC could not be used simultaneously with ShipHull.  In the Pro 4<!--1--> Ultra<!--/1-->, the mobile station can be connected to the ROV communications bus rather than the APIC (see below for hardware configuration details), and VideoRay cockpit can pass the data from the mobile station to the Shiphull software using a pair of virtual COM ports.  Using this arrangement, ShipHull can now be used simultaneously with accessories such as sonar or other devices that require a dedicated communications channel.</p>
+<p>A second example is the Desert Star AquaMap Shiphull.  Traditionally, this system used the APIC (Auxiliary Pair of Independent Conductors) in the tether, and the software "talked" directly to the mobile station mounted on the ROV.  This meant that other devices that require the APIC could not be used simultaneously with ShipHull.  In the Pro 4<!--1--> Ultra<!--/1--><!--3--> Lite<!--/3-->, the mobile station can be connected to the ROV communications bus rather than the APIC (see below for hardware configuration details), and VideoRay cockpit can pass the data from the mobile station to the Shiphull software using a pair of virtual COM ports.  Using this arrangement, ShipHull can now be used simultaneously with accessories such as sonar or other devices that require a dedicated communications channel.</p>
 
 <p>Other possible uses of virtual COM ports include having VideoRay Cockpit make the heading, depth, temperature and/or other parameters available for another software application to read in real time.</p>
 
@@ -70,6 +70,6 @@
 
 <h2>SDK (Software Developer's Kit)</h2>
 
-<p>Accessory developers, programmers and "Do-it-your-selfers" will be able to exploit the capabilities of the virtual COM ports and PAM easily through the VideoRay Cockpit SDK.  See the <a href="../../pro_4/html<!--1-->_ultra<!--/1-->/custom_sdk.html">SDK</a> section of the <a href="../../pro_4/html<!--1-->_ultra<!--/1-->/custom_.html">Customization Guide</a> for more information.  Additional information about the SDK can also be found online at: <a href="http://download.videoray.com/developer/" target="_blank">http://download.videoray.com/developer/</a></p>
+<p>Accessory developers, programmers and "Do-it-your-selfers" will be able to exploit the capabilities of the virtual COM ports and PAM easily through the VideoRay Cockpit SDK.  See the <a href="../../pro_4/html<!--1-->_ultra<!--/1--><!--3-->_lite<!--/3-->/custom_sdk.html">SDK</a> section of the <a href="../../pro_4/html<!--1-->_ultra<!--/1--><!--3-->_lite<!--/3-->/custom_.html">Customization Guide</a> for more information.  Additional information about the SDK can also be found online at: <a href="http://download.videoray.com/developer/" target="_blank">http://download.videoray.com/developer/</a></p>
 
 <!--1--></div><!--/1-->

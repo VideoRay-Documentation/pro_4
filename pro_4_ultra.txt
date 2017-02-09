@@ -1,8 +1,16 @@
 #Document Commands
+#Universal = 0
+#Ultra and Ultra Lite = 1
+#Ultra only = 2
+#Ultra Lite only = 3
+#Pro 4 = 4
+
 !PRODUCT,Pro 4 Ultra
-!VERSION,1.11.10
-!VALID_PAGES,1
-!VALID_TEXT,1
+!VERSION,2.00.00
+!INCLUDED_PAGES,12
+!EXCLUDED_PAGES,a
+!VALID_TEXT,012
+
 !HTML_VERSION,ultra
 
 !LOCAL_CSS,pro_4_ultra.css
@@ -10,3 +18,5 @@
 !INCLUDE,pro_4/base1.txt,1
 
 !INCLUDE,pro_4/base2.txt,1
+
+!INCLUDE,library/regional.txt,1

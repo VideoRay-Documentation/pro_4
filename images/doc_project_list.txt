@@ -1,0 +1,79 @@
+Write "Introduction to ROV Operations"
+
+Complete newest version of Pro 4 Operator's Manual
+
+Complete Pro 4 Control Panel Maintenance Manual
+
+Prepare for M5 Documentation
+
+Write Accessory Operator's Manuals
+	600XL Sonde
+	Cathodic Protection Probe
+	CoPilot RI
+	CoPilot Sonar
+	Cutter
+	External Camera
+	Gemini Imaging Sonar
+	GoPro HD Camera Kit
+	Hull Inspection Stabilizer
+	Laser Scaling Device
+	Manipulator
+	Articulating Manipulator
+	Micron Echosounder
+	Micron Nav
+	Micron Scanning Sonar
+	PAM (Protocol Adapter and Multiplexer)
+	ProViewer Imaging Sonar
+	ROV GPS Antenna
+	Radiation Sensor
+	Smart Tether
+	Ultrasonic Thickness Gauge
+	Zoom Camera
+        Leak Detector
+	Diagnostic Octopus
+
+Improve DynaDoc
+
+Work with VideoRay customers to create Industry Guides
+
+Write ROV SOPs working with VideoRay staff and/or users
+
+Implement general public comments in My_Notes for online versions
+
+Integrate training videos from Marketing
+
+Renew FAQ and link FAQs to documentation
+
+Develop VideoRay Quality Manual and Process documentation
+
+Brainstorm next generation documentation development and delivery systems
+
+Work with PE to implement Parts Navigator / Manufacturing Data system
+
+1.	Use simple language (subject – verb – object)  This helps ensure the meaning gets through and makes it easier for people who don’t speak English as their first language.
+2.	Avoid contractions
+3.	Avoid pronouns or ambiguity (example:  "Plug in the computer to the control panel and turn it on."  Does "it" mean the computer or the control panel or both?)
+4.	Be careful of colloquial double meanings.  "Did the alarm go off?"  Could mean it went off (on), or it went off (off).  Instead – Did the alarm light illuminate?
+5.	When asking questions, use a numbered list and only one question per line. (helps ensure they answer all questions so we don’t have to go back and forth)
+6.	Likewise, when providing diagnostics or resolution steps use a numbered list and only one step per line.
+7.	Use direct links to the documentation (almost 50% of our responses include these) Example: "Make sure the Aux Selector Switch is set to the down position in order to use the BlueView – see: http://download.videoray.com/documentation/pro_4/html/panel_connections.html"  Remind them each system (Pro 4 and Pro 4 Ultra) includes online documentation.
+8.	Build rapport (balance of professional, friendly and humorous – each when appropriate) – ask about the weather or current events – i.e. very mild in Northern Europe this past winter while we were colder than normal.
+9.	Ask if they feel confident to enact the test or solution and offer to assist further if necessary.
+10.	Set goals and attempt to achieve them for response times and other metrics.
+11.	We track and maintain the full message threads.
+12.	Follow up to ensure satisfaction or any unresolved issues before closing any cases.
+
+
+Operator's Manual
+SOP Manual
+Training Manual
+Maintenance Manual
+Parts Navigator
+Assembly Manual
+VITAL
+Industry Guide
+
+
+Link to video
+Link to www page
+Link to add comment

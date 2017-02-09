@@ -1,0 +1,226 @@
+<h1>Tether Specifications</h1>
+
+<h2>Tether Diameter</h2>
+
+<table>
+  <tr>
+    <th>Units \ Type</th>
+    <th>Negative</th>
+    <th>Neutral</th>
+    <th>Performance</th>
+    </tr>
+  <tr>
+    <td>mm</td>
+    <td>8.51 +/- 0.38</td>
+    <td>11.18 +/- 0.50</td>
+    <td>8.18 +/- 0.50</td>
+    </tr>
+  <tr>
+    <td>inches</td>
+    <td>0.335 +/- 0.015</td>
+    <td>0.440 +/- 0.020</td>
+    <td>0.322 +/- 0.020</td>
+    </tr>
+  </table>
+
+<h2>Minimum Tether Bend Radius</h2>
+
+<table>
+  <tr>
+    <th>Units \ Type</th>
+    <th>Negative</th>
+    <th>Neutral</th>
+    <th>Performance</th>
+    </tr>
+  <tr>
+    <td>mm</td>
+    <td>88.9</td>
+    <td>114</td>
+    <td>82.5</td>
+    </tr>
+  <tr>
+    <td>inches</td>
+    <td>3.5</td>
+    <td>4.5</td>
+    <td>3.25</td>
+    </tr>
+  </table>
+
+<h2>Tether Connector Pin Configuration</h2>
+
+<p><img src="../../pro_4/images/tether_pin_numbers.png"></p>
+<p>Tether pin numbering in the connector is shown above.  When looking at the mating surface of the connector, Pin 1 is the offset pin / socket.  For male connectors, pins 2-8 proceed in a clockwise direction.  For female connectors, sockets 2-8 proceed in a counter-clockwise direction.</p>
+
+<h2>Tether Pin Function and Conductor Wire Gauge</h2>
+
+<table>
+  <tr>
+    <th>
+      Pin
+      </th>
+    <th>
+      Function
+      </th>
+    <th>
+      Negative
+      </th>
+    <th>
+      Neutral
+      </th>
+    <th>
+      Performance
+      </th>
+    </tr>
+  <tr>
+    <td>
+      1
+      </td>
+    <td>
+      Video -
+      </td>
+    <td>
+      24 
+      </td>
+    <td>
+      24
+      </td>
+    <td>
+      28
+      </td>
+    </tr>
+  <tr>
+    <td>
+      2
+      </td>
+    <td>
+      Video +
+      </td>
+    <td>
+      24
+      </td>
+    <td>
+      24
+      </td>
+    <td>
+      28
+      </td>
+    </tr>
+  <tr>
+    <td>
+      3
+      </td>
+    <td>
+      <!--1-->48<!--/1--><!--4-->74<!--/4--> VDC +
+      </td>
+    <td>
+      16 (x2)
+      </td>
+    <td>
+      20 (x2)
+      </td>
+    <td>
+      24 (x2)
+      </td>
+    </tr>
+  <tr>
+    <td>
+      4
+      </td>
+    <td>
+      Aux + (APIC)
+      </td>
+    <td>
+      24
+      </td>
+    <td>
+      28
+      </td>
+    <td>
+      28
+       </td>
+    </tr>
+  <tr>
+    <td>
+      5
+      </td>
+    <td>
+      Ground
+      </td>
+    <td>
+      16 (x2)
+      </td>
+    <td>
+      20 (x2)
+      </td>
+    <td>
+      24 (x2)
+      </td>
+    </tr>
+  <tr>
+    <td>
+      6
+      </td>
+    <td>
+      Aux - (APIC)
+      </td>
+    <td>
+      24
+      </td>
+    <td>
+      28
+      </td>
+    <td>
+      28
+      </td>
+    </tr>
+  <tr>
+    <td>
+      7
+      </td>
+    <td>
+      RS-485 +/B
+      </td>
+    <td>
+      24
+      </td>
+    <td>
+      28
+      </td>
+    <td>
+      28
+      </td>
+    </tr>
+  <tr>
+    <td>
+      8
+      </td>
+    <td>
+      RS-485 -/A
+      </td>
+    <td>
+      24
+      </td>
+    <td>
+      28
+      </td>
+    <td>
+      28
+      </td>
+    </tr>
+  </table>
+
+<p><img src="../../required/images/icon_note.png"> All conductors are straight through, such that pin 1 in the male connector is connected to socket 1 in the female connector, and so on for all eight pins / sockets.</p>
+
+<h2>Tether Buoyancy</h2>
+
+<p>Performance and Neutral tether includes buoyancy compensating foam that provides near neutral buoyancy in fresh water.  Negative tether contains no foam and will sink.  The connectors do not contain any buoyancy compensation and will sink.</p>
+
+<h2>Tether Strength</h2>
+
+<p>All tether types include Kevlar that is rated at 450 kg (1,000 pounds), the connectors are rated 80 kg (175 pounds).</p>
+
+</p><img src="../../required/images/icon_caution.png"> These values are breaking strength.  The tether should not be subjected to a working strength greater than one half of the breaking strength.  The ROV and tether are equipped with a strain relief cable and connectors, which are rated at 136 kilograms (300 pounds).  The strain relief cable should be used to avoid separation of the tether connectors and loss of the ROV.</p>
+
+<p>The maximum usable tether length is limited by the ability of the tether to transmit power and data signals.  The maximum usable tether length of the Pro 4<!--1--> Ultra<!--/1--><!--3--> Lite<!--/3--> is about <!--4-->460 meters (1,500 feet)<!--/4--><!--1-->305 meters (1,000 feet)<!--/1-->.  See the <a href="../../pro_4/html<!--1-->_ultra<!--/1--><!--3-->_lite<!--/3-->/universal_tether.html">Tether Management</a> section of the Operations Guide for more information.</p>
+
+<p class="fineprint"> Kevlar is a registered trademark of E. I. du Pont de Nemours and Company</p>

@@ -15,7 +15,8 @@ if (document.images) {
    down = new Image;
    inx = new Image;
    out = new Image;
-   
+   reserved_2 = new Image;
+
    cockpit.src = '../images/vrcockpit_baseline.png';
    cockpitBase.src = '../images/vrcockpit_baseline.png';
    video.src = '../images/vrcockpit_video_highlight.png';
@@ -30,6 +31,6 @@ if (document.images) {
    dim.src = '../images/hand_controller_v1rb_dim.png';
    up.src = '../images/hand_controller_v1rb_up.png';
    down.src = '../images/hand_controller_v1rb_down.png';
-   inx.src = '../images/hand_controller_v1rb_in.png';
+   inx.src = '../images/hand_controller_v1rb_inx.png';
    out.src = '../images/hand_controller_v1rb_out.png';
    }

@@ -7,6 +7,7 @@
 !INCLUDE,required/overview_qs_.txt,1
 
 *,Equipment Guide,,equip_.htm,,,
+**,System Voltage Caution,,system_voltage.htm,,,
 **,ROV,,equip_rov.htm,,,../../pro_4/images/rov.jpg
 v***,ROV Connections,,rov_connections.htm,,rov_connections_sb.htm,
 v***,Buoyancy,,rov_buoyancy.htm,,rov_buoyancy_sb.htm,
@@ -14,32 +15,43 @@ v***,Propulsion,,rov_thrusters.htm,,rov_thrusters_sb.htm,
 v***,Main Camera,,rov_camera.htm,,rov_camera_sb.htm,
 v***,Main Lights,,rov_lights.htm,,rov_lights_sb.htm,
 v***,Sensors,,rov_sensors.htm,,rov_sensors_sb.htm,
+v***,Physical Dimensions,,rov_dimensions.htm,,,
 
 1**,Control Panel,,equip_panel.htm,,,../../pro_4/images/control_panel_ultra.jpg
 4**,Control Panel,,equip_panel.htm,,,../../pro_4/images/control_panel.jpg
 ***,Safety Circuits,,panel_safety.htm,,,
-4***,Switches and Connections,,panel_connections.htm,,panel_connections_sb.htm,
-v***,Computer,,panel_computer.htm,,,
-1v****,Lenovo Yoga Tablet,,computer_lenovo.htm,,,
-4v****,Dell 4000 Series,,computer_dell.htm,,,
+4***,Switches and Connections,,nul,,,
+4****,IP65 Control Panel,,panel_connections_ip65.htm,,panel_connections_sb.htm,
+4****,Standard Control Panel,,panel_connections.htm,,panel_connections_sb.htm,
+2v***,Computer,,panel_computer.htm,,,
+3v***,Computer Requirements,,computer_requirements.htm,,,
+4v***,Computer,,panel_computer.htm,,,
+2v****,Lenovo Yoga Tablet,,computer_lenovo.htm,,,
+4****,Amrel IP65 Series,,computer_amrel.htm,,,
+4v****,Dell 4000/7000 Series,,computer_dell.htm,,,
 4v****,Panasonic Toughbook,,computer_toughbook.htm,,,
 4v***,Monitor,,panel_monitor.htm,,,
+4****,IP65 Monitor,,panel_monitor_ip65.htm,,,
+4v****,Standard Monitor,,panel_monitor_std.htm,,,
 
-1**,Hand Controller,,equip_controller.htm,equip_controller.js,,../../pro_4/images/wireless-gamepad-f710feature-image.png
-4**,Hand Controller,,equip_controller.htm,equip_controller.js,,../../pro_4/images/hand_controller_v1rb.png
-#v***,Hand Controller Functions,,equip_controller_functions.htm,,,
-4v***,Help,,controller_help.htm,,,
-4v***,Joystick,,controller_joystick.htm,,controller_joystick_sb.htm,
-4v***,Depth Control,,controller_depth.htm,,controller_depth_sb.htm,
-4v***,Camera Switch,,controller_camera.htm,,,
-4v***,Camera Tilt,,controller_tilt.htm,,controller_tilt_sb.htm,
-4v***,Camera Focus,,controller_focus.htm,,controller_focus_sb.htm,
-4v***,Lights,,controller_lights.htm,,controller_lights_sb.htm,
-4v***,Snapshot,,controller_snapshot.htm,,controller_snapshot_sb.htm,
-4v***,Record,,controller_record.htm,,controller_record_sb.htm,
-4v***,Manipulator/Cutter,,controller_manip.htm,,controller_manip_sb.htm,
-#4v****,Lateral Thruster,,controller_lateral.htm,,controller_lateral_sb.htm,
-#v***,Hand Controller Support,,equip_controller_support.htm,,,
+**,Hand Controller,,equip_controller.htm,,,
+v***,Hand Controller Mapping,,nul,,,
+****,IP65 Controller,,controller_ip65.htm,,,
+v****,VideoRay Industrial Controller,,controller_industrial.htm,equip_controller.js,,../../pro_4/images/hand_controller_v1rb.png
+v****,Gamepad Style Controller,,controller_gamepad.htm,,,../../pro_4/images/wireless-gamepad-f710feature-image.png
+v***,Hand Controller Functions,,nul,,,
+4v****,Help,,controller_help.htm,,,
+4v****,Joystick,,controller_joystick.htm,,controller_joystick_sb.htm,
+4v****,Depth Control,,controller_depth.htm,,controller_depth_sb.htm,
+4v****,Camera Switch,,controller_camera.htm,,,
+4v****,Camera Tilt,,controller_tilt.htm,,controller_tilt_sb.htm,
+4v****,Camera Focus,,controller_focus.htm,,controller_focus_sb.htm,
+4v****,Lights,,controller_lights.htm,,controller_lights_sb.htm,
+4v****,Snapshot,,controller_snapshot.htm,,controller_snapshot_sb.htm,
+4v****,Record,,controller_record.htm,,controller_record_sb.htm,
+4v****,Manipulator/Cutter,,controller_manip.htm,,controller_manip_sb.htm,
+#4v*****,Lateral Thruster,,controller_lateral.htm,,controller_lateral_sb.htm,
+#v****,Hand Controller Support,,equip_controller_support.htm,,,
 #4v****,VideoRay Industrial Controller,,controller_videoray_industrial.htm,,,
 #4v****,Logitech RumblePad,,controller_logitech_rumblepad.htm,,,
 #4v****,Logitech Extreme 3D,,controller_logitech_extreme.htm,,,
@@ -47,7 +59,8 @@ v***,Computer,,panel_computer.htm,,,
 #4v****,Cyborg X Flight Stick,,controller_cyborg_x_flight_stick.htm,,,
 
 **,Tether,,equip_tether.htm,,equip_tether_sb.htm,../../pro_4/images/tether.jpg
-v***,TDS,,tether_tds.htm,,,../../pro_4/images/tds.jpg
+v***,Tether Specifications,,equip_tether_specs.htm,,,
+v***,TDS,,equip_tether_tds.htm,,,../../pro_4/images/tds.jpg
 
 **,Connections Summary,,equip_connections.htm,,,
 
